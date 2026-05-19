@@ -25,6 +25,144 @@
 </head>
 <body>
 
+  <!-- ===== Decorative SVG sprite — haberdashery elements scattered in second half of landing ===== -->
+  <svg width="0" height="0" style="position:absolute;overflow:hidden" aria-hidden="true" focusable="false">
+    <defs>
+      <!-- 4-hole yellow button -->
+      <symbol id="dc-btn-yellow" viewBox="0 0 80 80">
+        <circle cx="40" cy="40" r="36" fill="#14182A"/>
+        <circle cx="40" cy="40" r="33" fill="#FFD556"/>
+        <circle cx="40" cy="40" r="29" fill="none" stroke="#FFC127" stroke-width="1.5"/>
+        <circle cx="40" cy="40" r="20" fill="#FFC127" opacity=".5"/>
+        <circle cx="32" cy="32" r="3.4" fill="#14182A"/>
+        <circle cx="48" cy="32" r="3.4" fill="#14182A"/>
+        <circle cx="32" cy="48" r="3.4" fill="#14182A"/>
+        <circle cx="48" cy="48" r="3.4" fill="#14182A"/>
+        <circle cx="29" cy="29" r="1" fill="#fff" opacity=".5"/>
+        <path d="M14 24 q4 -10 22 -12" stroke="#fff" stroke-width="1.6" fill="none" opacity=".55" stroke-linecap="round"/>
+      </symbol>
+
+      <!-- 2-hole indigo button -->
+      <symbol id="dc-btn-blue" viewBox="0 0 80 80">
+        <circle cx="40" cy="40" r="34" fill="#14182A"/>
+        <circle cx="40" cy="40" r="31" fill="#4D61C4"/>
+        <circle cx="40" cy="40" r="26" fill="none" stroke="#6677CC" stroke-width="1.5"/>
+        <ellipse cx="40" cy="40" rx="12" ry="3" fill="#14182A" opacity=".35"/>
+        <circle cx="33" cy="40" r="3" fill="#fff"/>
+        <circle cx="47" cy="40" r="3" fill="#fff"/>
+        <path d="M16 26 q4 -10 22 -12" stroke="#fff" stroke-width="1.6" fill="none" opacity=".5" stroke-linecap="round"/>
+      </symbol>
+
+      <!-- White button with golden rim -->
+      <symbol id="dc-btn-white" viewBox="0 0 80 80">
+        <circle cx="40" cy="40" r="34" fill="#14182A"/>
+        <circle cx="40" cy="40" r="31" fill="#fff"/>
+        <circle cx="40" cy="40" r="26" fill="none" stroke="#E5E8F2" stroke-width="1.5"/>
+        <circle cx="40" cy="40" r="22" fill="#F4F6FB"/>
+        <circle cx="36" cy="36" r="2.8" fill="#14182A"/>
+        <circle cx="44" cy="36" r="2.8" fill="#14182A"/>
+        <circle cx="36" cy="44" r="2.8" fill="#14182A"/>
+        <circle cx="44" cy="44" r="2.8" fill="#14182A"/>
+        <circle cx="30" cy="30" r="2" fill="#fff" opacity=".9"/>
+      </symbol>
+
+      <!-- Thread spool (yellow) -->
+      <symbol id="dc-spool" viewBox="0 0 80 110">
+        <ellipse cx="40" cy="14" rx="32" ry="7" fill="#14182A"/>
+        <ellipse cx="40" cy="14" rx="29" ry="5" fill="#3A4A7A"/>
+        <ellipse cx="40" cy="96" rx="32" ry="7" fill="#14182A"/>
+        <ellipse cx="40" cy="96" rx="29" ry="5" fill="#3A4A7A"/>
+        <rect x="11" y="14" width="58" height="82" fill="#FFD556"/>
+        <g stroke="#FFC127" stroke-width="2" fill="none" opacity=".75">
+          <path d="M11 24 q14 -2 58 6"/>
+          <path d="M11 38 q14 -2 58 6"/>
+          <path d="M11 52 q14 -2 58 6"/>
+          <path d="M11 66 q14 -2 58 6"/>
+          <path d="M11 80 q14 -2 58 6"/>
+          <path d="M11 92 q14 -2 58 6"/>
+        </g>
+        <rect x="11" y="14" width="6" height="82" fill="#FFE48E" opacity=".7"/>
+      </symbol>
+
+      <!-- Thread spool (red/coral) -->
+      <symbol id="dc-spool-red" viewBox="0 0 80 110">
+        <ellipse cx="40" cy="14" rx="32" ry="7" fill="#14182A"/>
+        <ellipse cx="40" cy="14" rx="29" ry="5" fill="#3A4A7A"/>
+        <ellipse cx="40" cy="96" rx="32" ry="7" fill="#14182A"/>
+        <ellipse cx="40" cy="96" rx="29" ry="5" fill="#3A4A7A"/>
+        <rect x="11" y="14" width="58" height="82" fill="#F86B6D"/>
+        <g stroke="#D44E50" stroke-width="2" fill="none" opacity=".7">
+          <path d="M11 24 q14 -2 58 6"/>
+          <path d="M11 38 q14 -2 58 6"/>
+          <path d="M11 52 q14 -2 58 6"/>
+          <path d="M11 66 q14 -2 58 6"/>
+          <path d="M11 80 q14 -2 58 6"/>
+        </g>
+        <rect x="11" y="14" width="6" height="82" fill="#FF9090" opacity=".7"/>
+      </symbol>
+
+      <!-- Needle with red thread -->
+      <symbol id="dc-needle" viewBox="0 0 160 40">
+        <path d="M10 20 q-4 -10 0 -14 q14 -4 14 14 q0 8 -6 12" stroke="#F86B6D" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+        <ellipse cx="20" cy="20" rx="8" ry="4" fill="#8B91A6"/>
+        <ellipse cx="20" cy="20" rx="6" ry="2.5" fill="#14182A"/>
+        <path d="M28 18.5 L150 20 L150 21.5 L28 22.5 z" fill="#B0B5C5"/>
+        <path d="M150 20 L156 22 L150 22 z" fill="#8B91A6"/>
+        <path d="M150 18 L156 20 L150 20 z" fill="#B0B5C5"/>
+      </symbol>
+
+      <!-- Safety pin -->
+      <symbol id="dc-pin" viewBox="0 0 120 36">
+        <path d="M14 18 q-4 -10 4 -12 q12 -2 12 10 t-3 8 H100 q8 0 8 -6" stroke="#B0B5C5" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+        <circle cx="14" cy="18" r="6" fill="#FFD556" stroke="#14182A" stroke-width="1.5"/>
+        <circle cx="14" cy="18" r="2" fill="#FFC127"/>
+      </symbol>
+
+      <!-- Scissors -->
+      <symbol id="dc-scissors" viewBox="0 0 100 100">
+        <path d="M30 30 L78 50 L82 54 L72 58 L26 36 z" fill="#B0B5C5"/>
+        <path d="M30 70 L78 50 L82 46 L72 42 L26 64 z" fill="#B0B5C5"/>
+        <circle cx="22" cy="30" r="11" fill="none" stroke="#F86B6D" stroke-width="4"/>
+        <circle cx="22" cy="70" r="11" fill="none" stroke="#F86B6D" stroke-width="4"/>
+        <circle cx="50" cy="50" r="2.5" fill="#14182A"/>
+      </symbol>
+
+      <!-- Zipper -->
+      <symbol id="dc-zipper" viewBox="0 0 140 50">
+        <g fill="#FFD556" stroke="#14182A" stroke-width=".5">
+          <rect x="6" y="14" width="6" height="4"/>
+          <rect x="14" y="14" width="6" height="4"/>
+          <rect x="22" y="14" width="6" height="4"/>
+          <rect x="30" y="14" width="6" height="4"/>
+          <rect x="38" y="14" width="6" height="4"/>
+          <rect x="46" y="14" width="6" height="4"/>
+          <rect x="6" y="32" width="6" height="4"/>
+          <rect x="14" y="32" width="6" height="4"/>
+          <rect x="22" y="32" width="6" height="4"/>
+          <rect x="30" y="32" width="6" height="4"/>
+          <rect x="38" y="32" width="6" height="4"/>
+          <rect x="46" y="32" width="6" height="4"/>
+        </g>
+        <rect x="60" y="18" width="14" height="14" rx="3" fill="#4D61C4" stroke="#14182A" stroke-width="1"/>
+        <rect x="64" y="22" width="6" height="14" fill="#FFD556"/>
+        <circle cx="67" cy="36" r="2.5" fill="#14182A"/>
+        <rect x="2" y="22" width="60" height="6" fill="#8B91A6"/>
+      </symbol>
+
+      <!-- Thimble -->
+      <symbol id="dc-thimble" viewBox="0 0 80 90">
+        <path d="M20 36 q0 -28 20 -28 t20 28 v36 q0 8 -20 8 t-20 -8 z" fill="#B0B5C5"/>
+        <path d="M22 36 q0 -26 18 -26 t18 26 v6 q0 6 -18 6 t-18 -6 z" fill="#D5D9E5"/>
+        <g fill="#8B91A6">
+          <circle cx="30" cy="20" r="1.5"/><circle cx="38" cy="16" r="1.5"/><circle cx="46" cy="20" r="1.5"/>
+          <circle cx="26" cy="28" r="1.5"/><circle cx="34" cy="24" r="1.5"/><circle cx="42" cy="24" r="1.5"/><circle cx="50" cy="28" r="1.5"/>
+          <circle cx="30" cy="34" r="1.5"/><circle cx="38" cy="32" r="1.5"/><circle cx="46" cy="34" r="1.5"/>
+        </g>
+        <rect x="20" y="68" width="40" height="4" fill="#FFD556"/>
+      </symbol>
+    </defs>
+  </svg>
+
   <!-- ===== Top info bar ===== -->
   <div class="topbar">
     <div class="container topbar__inner">
@@ -48,7 +186,7 @@
   <!-- ===== Header ===== -->
   <header class="header">
     <div class="container header__inner">
-      <a href="#" class="logo" aria-label="Швеймаркет — главная">
+      <a href="#" class="logo" aria-label="Швеймаркет — оптовый пошив одежды под ключ, с 2010 года">
         <span class="logo__mark" aria-hidden="true">
           <!-- Needle-and-thread mark -->
           <svg viewBox="0 0 32 32" width="32" height="32">
@@ -58,7 +196,10 @@
             <path d="M9 21 q3 1 2 4 q-3 1 -4 -2 z" fill="currentColor" opacity=".55"/>
           </svg>
         </span>
-        <span class="logo__name">ШВЕЙМАРКЕТ</span>
+        <span class="logo__text">
+          <span class="logo__name">ШВЕЙМАРКЕТ</span>
+          <span class="logo__tagline">Оптовый пошив одежды под ключ · с 2010 года</span>
+        </span>
       </a>
 
       <nav class="nav" aria-label="Главное меню">
@@ -99,15 +240,9 @@
     <div class="container">
       <div class="hero__grid">
         <div class="hero__content">
-          <span class="eyebrow eyebrow--white">Оптовый пошив одежды под ключ · с 2010 года</span>
           <h1 class="hero__title">
             Одежда и фурнитура, <span class="accent-yellow">которая моментально</span> слетает с полок
           </h1>
-
-          <div class="hero__address">
-            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1112 6a2.5 2.5 0 010 5.5z"/></svg>
-            <span><strong>Нальчик, КБР</strong> · ул. Безенгийская, 10 — собственный цех и склад фурнитуры 1000 м²</span>
-          </div>
 
           <p class="hero__lead">
             Помогаем стать успешным поставщиком одежды, а также продаём фурнитуру для швейных производств. Полный цикл — от образца за 3 дня до промышленных партий.
@@ -167,7 +302,6 @@
   <section class="about" id="about">
     <div class="container">
       <div class="section-head section-head--center">
-        <span class="eyebrow">Кому подходит Швеймаркет</span>
         <h2 class="section-title">Швеймаркет создан как раз <span class="accent-yellow">для этого</span></h2>
       </div>
 
@@ -208,9 +342,12 @@
         </div>
       </div>
 
-      <div class="about__summary">
-        <p><strong>Мы знаем, что нужно вам.</strong> Покупатели бюджетной одежды выбирают нас уже 15 лет. Изготавливаем первый образец от 3 дней, развиваем коллекцию каждый месяц и поддерживаем стабильное качество годами.</p>
-        <a href="#cta-final" class="btn btn--accent">Обсудить заказ</a>
+      <div class="about__summary-wrap">
+        <h3 class="about__summary-title">Мы знаем, <span class="accent-yellow">что нужно вам</span></h3>
+        <div class="about__summary">
+          <p>Покупатели бюджетной одежды выбирают нас уже <strong>15 лет</strong>. Изготавливаем первый образец от <strong>3 дней</strong>, развиваем коллекцию каждый месяц и поддерживаем стабильное качество годами.</p>
+          <a href="#cta-final" class="btn btn--accent">Обсудить заказ</a>
+        </div>
       </div>
     </div>
   </section>
@@ -261,7 +398,7 @@
               </div>
             </div>
 
-            <p class="clients__hint">+ десятки региональных магазинов и маркетплейсы</p>
+            <p class="clients__hint">+ <strong>десятки региональных магазинов</strong> и <strong>маркетплейсы</strong></p>
           </div>
 
           <div class="clients__right">
@@ -452,6 +589,8 @@
 
   <!-- ===== 7. FURNITURE INTRO ===== -->
   <section class="fur-intro" id="furniture">
+    <span class="decor decor--spool-tr" aria-hidden="true"><svg><use href="#dc-spool"/></svg></span>
+    <span class="decor decor--btn-bl" aria-hidden="true"><svg><use href="#dc-btn-yellow"/></svg></span>
     <div class="container">
       <div class="fur-intro__card">
         <div class="fur-intro__text">
@@ -482,6 +621,9 @@
 
   <!-- ===== 8. 3 PROBLEMS ===== -->
   <section class="problems">
+    <span class="decor decor--pin-tl" aria-hidden="true"><svg><use href="#dc-pin"/></svg></span>
+    <span class="decor decor--btn-tr-blue" aria-hidden="true"><svg><use href="#dc-btn-blue"/></svg></span>
+    <span class="decor decor--btn-br-white" aria-hidden="true"><svg><use href="#dc-btn-white"/></svg></span>
     <div class="container">
       <div class="section-head section-head--center">
         <span class="eyebrow">Боль рынка</span>
@@ -531,6 +673,8 @@
 
   <!-- ===== 9. ASSORTMENT ===== -->
   <section class="assort">
+    <span class="decor decor--scissors-l" aria-hidden="true"><svg><use href="#dc-scissors"/></svg></span>
+    <span class="decor decor--spool-red-br" aria-hidden="true"><svg><use href="#dc-spool-red"/></svg></span>
     <div class="container">
       <div class="section-head section-head--center">
         <span class="eyebrow">Ассортимент склада</span>
@@ -558,6 +702,8 @@
 
   <!-- ===== 10. OWN PRODUCTION: TOP-3 ===== -->
   <section class="own-prod">
+    <span class="decor decor--needle-tr" aria-hidden="true"><svg><use href="#dc-needle"/></svg></span>
+    <span class="decor decor--btn-bl-yellow" aria-hidden="true"><svg><use href="#dc-btn-yellow"/></svg></span>
     <div class="container">
       <div class="section-head section-head--center">
         <span class="eyebrow">Своё производство фурнитуры</span>
@@ -621,6 +767,8 @@
 
   <!-- ===== 11. 5 STEPS ===== -->
   <section class="steps">
+    <span class="decor decor--thimble-tl" aria-hidden="true"><svg><use href="#dc-thimble"/></svg></span>
+    <span class="decor decor--zipper-br" aria-hidden="true"><svg><use href="#dc-zipper"/></svg></span>
     <div class="container">
       <div class="section-head section-head--center">
         <span class="eyebrow">Производство под вас</span>
@@ -654,6 +802,8 @@
 
   <!-- ===== 12. METRICS / STANDARD ===== -->
   <section class="metrics">
+    <span class="decor decor--btn-tl-white" aria-hidden="true"><svg><use href="#dc-btn-white"/></svg></span>
+    <span class="decor decor--spool-br" aria-hidden="true"><svg><use href="#dc-spool"/></svg></span>
     <div class="container">
       <div class="metrics__head">
         <h2 class="section-title section-title--inverse">Тесьма, резинка и термоэтикетка — <span class="accent-yellow">3 надёжных компонента</span> в вашем изделии</h2>
