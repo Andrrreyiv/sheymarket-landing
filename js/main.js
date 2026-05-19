@@ -61,22 +61,58 @@
         btn.disabled = true;
         btn.style.background = '#43C68F';
         btn.style.color = '#fff';
+        btn.style.borderColor = '#1f8d62';
         setTimeout(() => {
           btn.textContent = original;
           btn.disabled = false;
           btn.style.background = '';
           btn.style.color = '';
+          btn.style.borderColor = '';
           form.reset();
         }, 2800);
       }
     });
   });
 
-  // ----- Reveal on scroll -----
-  const revealTargets = document.querySelectorAll(
-    '.section-head, .qcard, .clients__points li, .testimonial__card, .cat-card, .plan__step, .fur-intro__card, .problem-card, .problems__solution, .tag, .prod-card, .step-card, .metric, .m-tag, .final-cta__grid'
-  );
-  revealTargets.forEach((el) => el.classList.add('reveal'));
+  // ----- Reveal on scroll with stagger inside containers -----
+  const revealSelectors = [
+    '.section-head',
+    '.qcard',
+    '.clients__points li',
+    '.testimonial__card',
+    '.cat-card',
+    '.plan__step',
+    '.plan__cta',
+    '.fur-intro__card',
+    '.fur-intro__pills li',
+    '.problem-card',
+    '.problems__solution',
+    '.tag',
+    '.prod-card',
+    '.step-card',
+    '.metric',
+    '.m-tag',
+    '.bridge__inner',
+    '.final-cta__grid',
+    '.hero__form',
+    '.hero__badges li'
+  ].join(', ');
+
+  const revealTargets = document.querySelectorAll(revealSelectors);
+
+  // Group adjacent same-parent items to apply stagger delays
+  const groupMap = new Map();
+  revealTargets.forEach((el) => {
+    el.classList.add('reveal');
+    const parent = el.parentElement;
+    if (!groupMap.has(parent)) groupMap.set(parent, []);
+    groupMap.get(parent).push(el);
+  });
+  groupMap.forEach((items) => {
+    items.forEach((el, idx) => {
+      el.style.setProperty('--reveal-delay', `${Math.min(idx, 6) * 70}ms`);
+    });
+  });
 
   if ('IntersectionObserver' in window) {
     const io = new IntersectionObserver(
@@ -88,7 +124,7 @@
           }
         });
       },
-      { threshold: 0.12 }
+      { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
     );
     revealTargets.forEach((el) => io.observe(el));
   } else {
@@ -103,7 +139,7 @@
       const target = document.querySelector(href);
       if (target) {
         e.preventDefault();
-        const offset = 78;
+        const offset = 88;
         const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
         window.scrollTo({ top, behavior: 'smooth' });
       }
