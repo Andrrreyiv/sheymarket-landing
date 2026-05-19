@@ -76,21 +76,21 @@
         <span></span><span></span><span></span>
       </button>
     </div>
-
-    <!-- Mobile menu drawer -->
-    <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
-      <nav class="mobile-menu__nav">
-        <a href="#about">О нас</a>
-        <a href="#clients">Клиенты</a>
-        <a href="#catalog">Каталог</a>
-        <a href="#plan">Этапы</a>
-        <a href="#furniture">Фурнитура</a>
-        <a href="#contacts">Контакты</a>
-        <a href="tel:+79280788466" class="mobile-menu__phone">+7 (928) 078-84-66</a>
-        <a href="#cta-final" class="btn btn--accent btn--block">Получить расчёт</a>
-      </nav>
-    </div>
   </header>
+
+  <!-- Mobile menu drawer (lives at body root so position:fixed is viewport-relative, not constrained by header's backdrop-filter containing block) -->
+  <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+    <nav class="mobile-menu__nav">
+      <a href="#about">О нас</a>
+      <a href="#clients">Клиенты</a>
+      <a href="#catalog">Каталог</a>
+      <a href="#plan">Этапы</a>
+      <a href="#furniture">Фурнитура</a>
+      <a href="#contacts">Контакты</a>
+      <a href="tel:+79280788466" class="mobile-menu__phone">+7 (928) 078-84-66</a>
+      <a href="#cta-final" class="btn btn--accent btn--block">Получить расчёт</a>
+    </nav>
+  </div>
 
   <!-- ===== 1. HERO ===== -->
   <section class="hero" id="hero">
