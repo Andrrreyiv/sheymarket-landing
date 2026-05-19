@@ -549,21 +549,29 @@ section { padding: var(--sp-section) 0; }
 .hero__form-policy a { text-decoration: underline; }
 
 @media (max-width: 1100px) {
-  .hero { padding: 60px 0 96px; }
+  .hero { padding: 60px 0 80px; }
   .hero__grid { grid-template-columns: 1fr; gap: 38px; }
   .hero__media { max-width: 520px; margin: 0 auto; width: 100%; }
   .hero__photo { max-width: 100%; }
-  .hero__form { position: static; margin-top: 84px; }
+  .hero__form { position: static; margin-top: 28px; left: auto; right: auto; bottom: auto; }
+}
+@media (max-width: 700px) {
+  .hero__address { font-size: 14px; padding: 12px 16px; gap: 10px; }
+  .hero__address strong { display: inline; }
 }
 @media (max-width: 560px) {
-  .hero { padding: 44px 0 60px; }
+  .hero { padding: 44px 0 56px; }
   .hero__photo-bubble { width: 88px; height: 88px; top: -14px; right: -8px; }
   .bubble__num { font-size: 22px; }
   .bubble__txt { font-size: 10px; }
   .hero__badges { gap: 10px; }
-  .hero__badges li { padding: 10px 14px 10px 12px; gap: 10px; }
-  .hero__badge-num { font-size: 24px; }
-  .hero__badge-txt { font-size: 12px; }
+  .hero__badges li { padding: 10px 14px 10px 12px; gap: 10px; flex: 1 1 auto; min-width: 0; }
+  .hero__badge-num { font-size: 22px; }
+  .hero__badge-txt { font-size: 11px; line-height: 1.2; }
+  .hero__form { padding: 20px 18px 18px; }
+  .hero__actions { flex-direction: column; align-items: stretch; }
+  .hero__actions .btn { width: 100%; justify-content: center; }
+  .hero__address { font-size: 13px; padding: 10px 14px; }
 }
 
 /* ===========================================================
@@ -679,8 +687,8 @@ section { padding: var(--sp-section) 0; }
   box-shadow: var(--sh-md);
 }
 .about__summary p {
-  flex: 1;
-  min-width: 280px;
+  flex: 1 1 280px;
+  min-width: 0;
   font-size: 17px;
   line-height: 1.5;
 }
@@ -690,9 +698,15 @@ section { padding: var(--sp-section) 0; }
   .about__grid { grid-template-columns: 1fr; gap: 36px; }
   .about__media { position: static; }
 }
+@media (max-width: 720px) {
+  .about__summary { padding: 28px 24px; gap: 20px; }
+  .about__summary p { font-size: 16px; }
+}
 @media (max-width: 520px) {
   .qcard { padding: 26px 22px 22px 22px; }
   .qcard__check { position: static; margin-bottom: 14px; }
+  .about__summary { padding: 24px 20px; }
+  .about__summary .btn { width: 100%; justify-content: center; }
 }
 
 /* ===========================================================
@@ -1324,7 +1338,8 @@ section { padding: var(--sp-section) 0; }
 }
 
 @media (max-width: 1000px) { .steps__grid { grid-template-columns: repeat(3, 1fr); } }
-@media (max-width: 580px)  { .steps__grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 720px)  { .steps__grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 420px)  { .steps__grid { grid-template-columns: 1fr; } }
 
 /* ===========================================================
    12. METRICS — huge numbers
