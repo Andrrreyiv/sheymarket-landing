@@ -607,18 +607,6 @@ section { padding: var(--sp-section) 0; }
     linear-gradient(180deg, transparent 65%, rgba(0,0,0,.18)),
     radial-gradient(120% 80% at 50% 50%, transparent 60%, rgba(0,0,0,.06));
 }
-.about__photo-caption {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin: 16px auto 0;
-  font-size: 14px;
-  color: var(--c-text-muted);
-  max-width: 440px;
-  justify-content: center;
-}
-.about__photo-caption svg { color: var(--c-primary); }
-
 .about__cards {
   display: flex;
   flex-direction: column;
