@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Швеймаркет — оптовый пошив одежды под ключ. Производство одежды и фурнитуры в Нальчике, КБР. 15 лет на рынке. Поставщик «Лента» и «Светофор»." />
+  <meta name="theme-color" content="#4D61C4" />
+  <title>Швеймаркет — оптовый пошив одежды и фурнитура в Нальчике</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ===== Top info bar ===== -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__left">
+        <span class="topbar__hours">Пн–Сб: 9:00—19:00</span>
+        <a href="tel:+79280788466" class="topbar__phone">+7 (928) 078-84-66</a>
+      </div>
+      <div class="topbar__right">
+        <svg class="icon icon-pin" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>
+        <a href="#contacts">Нальчик, ул. Безенгийская 10</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Header ===== -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo" aria-label="Швеймаркет">
+        <span class="logo__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="32" height="32"><path fill="currentColor" d="M16 2 30 9v14L16 30 2 23V9Zm0 3-9.6 4.8v10.4L16 25l9.6-4.8V9.8Zm0 4 5.6 2.8L16 14.6l-5.6-2.8Zm-7 4.4 6 3v6.4l-6-3Zm14 0v6.4l-6 3v-6.4Z"/></svg>
+        </span>
+        <span class="logo__text">
+          <span class="logo__name">ШВЕЙМАРКЕТ</span>
+          <span class="logo__tagline">Оптовый пошив одежды</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Главное меню">
+        <a href="#about">О нас</a>
+        <a href="#clients">Клиенты</a>
+        <a href="#catalog">Каталог</a>
+        <a href="#plan">Этапы</a>
+        <a href="#furniture">Фурнитура</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <a href="#cta-final" class="btn btn--primary header__cta">Получить расчёт</a>
+
+      <button class="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu drawer -->
+    <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+      <nav class="mobile-menu__nav">
+        <a href="#about">О нас</a>
+        <a href="#clients">Клиенты</a>
+        <a href="#catalog">Каталог</a>
+        <a href="#plan">Этапы</a>
+        <a href="#furniture">Фурнитура</a>
+        <a href="#contacts">Контакты</a>
+        <a href="tel:+79280788466" class="mobile-menu__phone">+7 (928) 078-84-66</a>
+        <a href="#cta-final" class="btn btn--primary btn--block">Получить расчёт</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== 1. HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero__grid">
+        <div class="hero__content">
+          <span class="eyebrow eyebrow--white">Оптовый пошив одежды под ключ</span>
+          <h1 class="hero__title">
+            Одежда и фурнитура, <span class="accent-yellow">которая моментально</span> слетает с полок
+          </h1>
+          <p class="hero__lead">
+            Помогаем стать успешными поставщиками одежды и продаём фурнитуру для швейных производств. Полный цикл — от образца до партии.
+          </p>
+
+          <ul class="hero__badges">
+            <li>
+              <span class="hero__badge-num">15</span>
+              <span>лет на рынке</span>
+            </li>
+            <li>
+              <span class="hero__badge-num">3</span>
+              <span>дня — первый образец</span>
+            </li>
+            <li>
+              <span class="hero__badge-num">500+</span>
+              <span>позиций фурнитуры</span>
+            </li>
+          </ul>
+
+          <div class="hero__actions">
+            <a href="#cta-final" class="btn btn--primary btn--lg">Заказать пошив</a>
+            <a href="#furniture" class="btn btn--ghost btn--lg">Каталог фурнитуры</a>
+          </div>
+        </div>
+
+        <div class="hero__media">
+          <div class="hero__photo">
+            <img src="assets/img/hero.jpg" alt="Швейное производство Швеймаркет — пошив одежды" />
+            <div class="hero__photo-tag">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>Собственный цех<br/>в КБР</span>
+            </div>
+            <div class="hero__photo-bubble" aria-hidden="true">
+              <span class="bubble__num">15 лет</span>
+              <span class="bubble__txt">в&nbsp;деле</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- inline capture form -->
+      <form class="hero__form" action="#" method="post" id="form-hero">
+        <div class="hero__form-row">
+          <div class="hero__form-text">
+            <strong>Получите расчёт за 15 минут</strong>
+            <span>Перезвоним и пришлём прайс по фурнитуре или образцам</span>
+          </div>
+          <input type="text" name="name" placeholder="Как к вам обращаться?" required />
+          <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required />
+          <button type="submit" class="btn btn--accent btn--lg">Отправить заявку</button>
+        </div>
+        <p class="hero__form-policy">Нажимая «Отправить», вы соглашаетесь с <a href="#">политикой обработки данных</a></p>
+      </form>
+    </div>
+
+    <div class="hero__bg" aria-hidden="true"></div>
+  </section>
+
+  <!-- ===== 2. ABOUT / 3 QUESTIONS ===== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <span class="eyebrow">Кому подходит Швеймаркет</span>
+        <h2 class="section-title">Швеймаркет создан как раз <span class="accent-yellow">для этого</span></h2>
+      </div>
+
+      <div class="about__grid">
+        <!-- left: image -->
+        <div class="about__media">
+          <div class="about__photo">
+            <img src="assets/img/showroom.jpg" alt="Шоурум одежды Швеймаркет" />
+            <div class="about__photo-frame" aria-hidden="true"></div>
+          </div>
+          <div class="about__photo-caption">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 4 4 8v8l8 4 8-4V8zm0 2.2 6 3v.6l-6 3-6-3v-.6zm-6 5 6 3v5.6l-6-3zm14 5.6-6 3v-5.6l6-3z"/></svg>
+            <span>Наш шоурум готовой коллекции</span>
+          </div>
+        </div>
+
+        <!-- right: 3 alternating cards -->
+        <div class="about__cards">
+          <div class="qcard qcard--yellow">
+            <div class="qcard__head">
+              <span class="qcard__num">I</span>
+              <div class="qcard__title">Хотите зарабатывать на «топовых» позициях?</div>
+            </div>
+            <p>Шьём одежду, которая годами популярна в торговых сетях и на маркетплейсах. Готовые лекала, проверенные временем модели — берите и продавайте.</p>
+          </div>
+
+          <div class="qcard qcard--white">
+            <div class="qcard__head">
+              <span class="qcard__num">II</span>
+              <div class="qcard__title">Создаёте свою линейку с нуля?</div>
+            </div>
+            <p>Поможем превратить идею в готовый продукт: подскажем материал, технологию, рассчитаем себестоимость. Используем наш 15-летний опыт.</p>
+          </div>
+
+          <div class="qcard qcard--yellow">
+            <div class="qcard__head">
+              <span class="qcard__num">III</span>
+              <div class="qcard__title">Нужна фурнитура одним поставщиком?</div>
+            </div>
+            <p>Более <strong>500 наименований</strong> фурнитуры на собственном складе 1000 м². Всё что нужно швейному производству — в одних руках.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="about__summary">
+        <p><strong>Мы знаем, что нужно вам.</strong> Покупатели бюджетной одежды выбирают нас уже 15 лет. Изготавливаем первый образец от 3 дней, развиваем коллекцию каждый месяц и поддерживаем стабильное качество годами.</p>
+        <a href="#cta-final" class="btn btn--primary">Обсудить заказ</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 3. CLIENTS: Лента и Светофор ===== -->
+  <section class="clients" id="clients">
+    <div class="container">
+      <div class="clients__card">
+        <div class="clients__grid">
+          <div class="clients__left">
+            <span class="eyebrow eyebrow--inverse">Нам доверяют крупнейшие сети</span>
+            <h2 class="section-title section-title--inverse">
+              Почему «Лента» и «Светофор» <span class="accent-yellow">5 лет выбирают нас?</span>
+            </h2>
+
+            <div class="clients__logos">
+              <div class="clients__logo lenta-logo" aria-label="Лента">
+                <svg viewBox="0 0 200 80" width="200" height="80">
+                  <circle cx="38" cy="40" r="22" fill="#FFCD00"/>
+                  <g stroke="#FFCD00" stroke-width="4" stroke-linecap="round">
+                    <line x1="38" y1="6" x2="38" y2="18"/>
+                    <line x1="38" y1="62" x2="38" y2="74"/>
+                    <line x1="6" y1="40" x2="18" y2="40"/>
+                    <line x1="58" y1="40" x2="70" y2="40"/>
+                    <line x1="14" y1="16" x2="22" y2="24"/>
+                    <line x1="54" y1="56" x2="62" y2="64"/>
+                    <line x1="14" y1="64" x2="22" y2="56"/>
+                    <line x1="54" y1="24" x2="62" y2="16"/>
+                  </g>
+                  <text x="80" y="52" font-family="Inter, sans-serif" font-weight="800" font-size="32" fill="#0F2A6E">ЛЕНТА</text>
+                </svg>
+              </div>
+              <div class="clients__logo svetofor-logo" aria-label="Светофор">
+                <svg viewBox="0 0 220 80" width="220" height="80">
+                  <rect x="6" y="10" width="40" height="60" rx="8" fill="#222"/>
+                  <circle cx="26" cy="24" r="7" fill="#F33"/>
+                  <circle cx="26" cy="40" r="7" fill="#FFCD00"/>
+                  <circle cx="26" cy="56" r="7" fill="#1FAE4D"/>
+                  <text x="56" y="52" font-family="Inter, sans-serif" font-weight="800" font-size="28" fill="#FFCD00">СВЕТОФОР</text>
+                </svg>
+              </div>
+            </div>
+
+            <p class="clients__hint">+ десятки региональных магазинов и маркетплейсы</p>
+          </div>
+
+          <div class="clients__right">
+            <ul class="clients__points">
+              <li>
+                <span class="check"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>
+                <div>
+                  <h3>Лучшие цены в России за требуемое качество</h3>
+                  <p>Договариваемся напрямую с фабриками тканей, держим себестоимость низкой за счёт собственного цеха.</p>
+                </div>
+              </li>
+              <li>
+                <span class="check"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>
+                <div>
+                  <h3>Стандарт качества в каждой партии</h3>
+                  <p>В каждом элементе фурнитуры, в пошиве каждого рукава и кармана придерживаемся изначально утверждённого образца.</p>
+                </div>
+              </li>
+              <li>
+                <span class="check"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>
+                <div>
+                  <h3>Всегда успеваем по срокам</h3>
+                  <p>Чёткое планирование, своевременные закупки и собственный логистический процесс — без срывов поставок.</p>
+                </div>
+              </li>
+            </ul>
+
+            <a href="#cta-final" class="btn btn--accent btn--lg">Стать партнёром</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 4. TESTIMONIAL ===== -->
+  <section class="testimonial">
+    <div class="container">
+      <div class="testimonial__head">
+        <span class="badge-trophy">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v2c0 2.21 1.79 4 4 4 .5 1.85 2 3.31 4 3.84V19H8v2h8v-2h-3v-3.16c2-.53 3.5-2 4-3.84 2.21 0 4-1.79 4-4V7c0-1.1-.9-2-2-2zM5 9V7h2v3.82C5.84 10.4 5 9.31 5 9zm14 0c0 .31-.84 1.4-2 1.82V7h2z"/></svg>
+          Победители рейтингов поставщиков
+        </span>
+      </div>
+
+      <figure class="testimonial__card">
+        <span class="testimonial__quote" aria-hidden="true">“</span>
+        <blockquote>
+          <p>Поработав со множеством российских производителей и с Китаем, мы в итоге выбрали Швеймаркет. Сейчас мы поставляем одежду в <strong>400 магазинов «Светофор»</strong>.</p>
+          <p>В «Светофоре» всё упирается в цену. Наша задача — лучшее качество за их цену. Швеймаркет с этой задачей справился лучше всех: пошив плотнее, фурнитура надёжнее, рукава ровные.</p>
+          <p>Что касается Китая — это всегда большие партии, замедленные обороты, риск остаться с остатками. Швеймаркет — решение всех подобных проблем: мы и сами производители, заказываем здесь и пошив, и фурнитуру. Ассортимент огромный, и всегда в наличии.</p>
+        </blockquote>
+        <figcaption>
+          <div class="testimonial__avatar" aria-hidden="true">АГ</div>
+          <div>
+            <div class="testimonial__name">Алоков Гиса</div>
+            <div class="testimonial__role">Поставщик одежды в торговую сеть «Светофор»</div>
+          </div>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ===== 5. CATALOG: TOP SELLERS ===== -->
+  <section class="catalog" id="catalog">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <span class="eyebrow">Топ продаж — пошив</span>
+        <h2 class="section-title">Самые популярные виды одежды <span class="accent-yellow">в нашем топе</span></h2>
+        <p class="section-lead">Готовые лекала, отлаженные потоки производства, проверенные временем модели.</p>
+      </div>
+
+      <div class="catalog__grid">
+        <!-- Each card has unique SVG illustration -->
+        <article class="cat-card">
+          <div class="cat-card__art" style="--art-bg:#FFE48C">
+            <svg viewBox="0 0 64 64" aria-hidden="true"><path fill="#4D61C4" d="M22 8h20l-4 8 8 6-4 30-10 4-10-4-4-30 8-6z"/><path fill="#fff" opacity=".4" d="M28 18h8v4h-8z"/></svg>
+          </div>
+          <span>Платья</span>
+        </article>
+        <article class="cat-card">
+          <div class="cat-card__art" style="--art-bg:#C6D2F2">
+            <svg viewBox="0 0 64 64" aria-hidden="true"><path fill="#4D61C4" d="M22 8h20l4 8-2 40h-10l-2-28-2 28H20l-2-40z"/></svg>
+          </div>
+          <span>Брюки</span>
+        </article>
+        <article class="cat-card">
+          <div class="cat-card__art" style="--art-bg:#FFD4D5">
+            <svg viewBox="0 0 64 64" aria-hidden="true"><path fill="#4D61C4" d="M20 14h24l4 6-2 26h-12l-1-14-1 14H18l-2-26z"/></svg>
+          </div>
+          <span>Шорты</span>
+        </article>
+        <article class="cat-card">
+          <div class="cat-card__art" style="--art-bg:#FFE48C">
+            <svg viewBox="0 0 64 64" aria-hidden="true"><g fill="#4D61C4"><path d="M14 18 24 8h16l10 10-6 6-4-3v33H24V21l-4 3z"/></g><g fill="#fff" opacity=".55"><rect x="22" y="22" width="20" height="2"/><rect x="22" y="28" width="20" height="2"/><rect x="22" y="34" width="20" height="2"/><rect x="22" y="40" width="20" height="2"/></g></svg>
+          </div>
+          <span>Тельняшки</span>
+        </article>
+        <article class="cat-card">
+          <div class="cat-card__art" style="--art-bg:#C6D2F2">
+            <svg viewBox="0 0 64 64" aria-hidden="true"><path fill="#4D61C4" d="M16 14h8l8 6 8-6h8l4 10-6 4v26H18V28l-6-4z"/></svg>
+          </div>
+          <span>Майки</span>
+        </article>
+        <article class="cat-card">
+          <div class="cat-card__art" style="--art-bg:#FFD4D5">
+            <svg viewBox="0 0 64 64" aria-hidden="true"><path fill="#4D61C4" d="M16 22h32l-4 16-12 4-12-4z"/></svg>
+          </div>
+          <span>Трусы</span>
+        </article>
+        <article class="cat-card">
+          <div class="cat-card__art" style="--art-bg:#FFE48C">
+            <svg viewBox="0 0 64 64" aria-hidden="true"><path fill="#4D61C4" d="M22 10h20l4 6-2 24h-10l-1-10-1 10H20l-2-24z"/></svg>
+          </div>
+          <span>Бриджи</span>
+        </article>
+        <article class="cat-card">
+          <div class="cat-card__art" style="--art-bg:#C6D2F2">
+            <svg viewBox="0 0 64 64" aria-hidden="true"><path fill="#4D61C4" d="M24 8h16l4 8v40h-8l-2-28-2 28h-8V16z"/></svg>
+          </div>
+          <span>Лосины</span>
+        </article>
+        <article class="cat-card">
+          <div class="cat-card__art" style="--art-bg:#FFD4D5">
+            <svg viewBox="0 0 64 64" aria-hidden="true"><path fill="#4D61C4" d="M14 14 22 8h6l4 4 4-4h6l8 6-4 8-2-2v36H20V20l-2 2z"/></svg>
+          </div>
+          <span>Халаты</span>
+        </article>
+        <article class="cat-card">
+          <div class="cat-card__art" style="--art-bg:#FFE48C">
+            <svg viewBox="0 0 64 64" aria-hidden="true"><path fill="#4D61C4" d="M14 18 24 8h16l10 10-6 6-4-3v30H24V21l-4 3z"/></svg>
+          </div>
+          <span>Футболки</span>
+        </article>
+        <article class="cat-card">
+          <div class="cat-card__art" style="--art-bg:#C6D2F2">
+            <svg viewBox="0 0 64 64" aria-hidden="true"><g fill="#4D61C4"><path d="M22 8h20l4 8 4 26h-8l-2 14h-16l-2-14h-8l4-26z"/></g><circle cx="32" cy="22" r="2" fill="#fff"/></svg>
+          </div>
+          <span>Спорт-костюмы</span>
+        </article>
+        <article class="cat-card">
+          <div class="cat-card__art" style="--art-bg:#FFD4D5">
+            <svg viewBox="0 0 64 64" aria-hidden="true"><path fill="#4D61C4" d="M18 14 26 8h12l8 6-4 8-4-2v34H22V20l-4 2z"/></svg>
+          </div>
+          <span>Туники</span>
+        </article>
+      </div>
+
+      <p class="catalog__note">— и любые ваши модели по эскизу или образцу</p>
+    </div>
+  </section>
+
+  <!-- ===== 6. PLAN ===== -->
+  <section class="plan" id="plan">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <span class="eyebrow">Как мы работаем</span>
+        <h2 class="section-title">Обращайтесь — <span class="accent-yellow">у нас есть план</span></h2>
+      </div>
+
+      <ol class="plan__steps">
+        <li class="plan__step">
+          <div class="plan__num">01</div>
+          <h3>Поговорим о вашей идее</h3>
+          <p>Обсудим материал, требования к качеству, сроки и бюджет. Подскажем оптимальный вариант.</p>
+        </li>
+        <li class="plan__step">
+          <div class="plan__num">02</div>
+          <h3>Идеальный образец за 3–4 дня</h3>
+          <p>Снимем лекала, отшьём опытный образец. Дорабатываем до полного попадания в задумку.</p>
+        </li>
+        <li class="plan__step">
+          <div class="plan__num">03</div>
+          <h3>Заключаем договор</h3>
+          <p>Фиксируем цены, сроки, объёмы, ответственность. Прозрачные условия для роста.</p>
+        </li>
+        <li class="plan__step">
+          <div class="plan__num">04</div>
+          <h3>Шьём, продаём, растём</h3>
+          <p>Запускаем партии, расширяем коллекцию, помогаем масштабироваться вашему бизнесу.</p>
+        </li>
+      </ol>
+
+      <div class="plan__cta">
+        <h3>Мир ждёт вашу линейку одежды!</h3>
+        <a href="#cta-final" class="btn btn--primary btn--lg">Начать работу</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 7. FURNITURE INTRO ===== -->
+  <section class="fur-intro" id="furniture">
+    <div class="container">
+      <div class="fur-intro__card">
+        <div class="fur-intro__text">
+          <span class="eyebrow eyebrow--inverse">Фурнитура для швейных производств</span>
+          <h2 class="section-title section-title--inverse">Пришли к нам <span class="accent-yellow">за фурнитурой?</span></h2>
+          <p class="fur-intro__lead">
+            В среднем у швейного производства <strong>17 поставщиков фурнитуры</strong>. Это утомляет. Теперь всё можно найти у нас — оптового поставщика фурнитуры на Северном Кавказе.
+          </p>
+
+          <ul class="fur-intro__pills">
+            <li><span class="pill-num">КБР</span><span>Находимся рядом — в Кабардино-Балкарии</span></li>
+            <li><span class="pill-num">1000 м²</span><span>Собственный склад с живым наличием</span></li>
+            <li><span class="pill-num">500+</span><span>Категорий в постоянном ассортименте</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 8. 3 PROBLEMS ===== -->
+  <section class="problems">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <span class="eyebrow">Боль рынка</span>
+        <h2 class="section-title">У производителей одежды <span class="accent-yellow">3 проблемы</span></h2>
+      </div>
+
+      <div class="problems__grid">
+        <article class="problem-card">
+          <div class="problem-card__icon">
+            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2 1 21h22L12 2zm0 4 7.5 13h-15L12 6zm-1 5v4h2v-4h-2zm0 6v2h2v-2h-2z"/></svg>
+          </div>
+          <h3>Разбросанность поставщиков</h3>
+          <p>Поставщики в разных регионах, странах. Это километры дорог, разные сроки и логистические сложности.</p>
+        </article>
+        <article class="problem-card">
+          <div class="problem-card__icon">
+            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2 1 21h22L12 2zm0 4 7.5 13h-15L12 6zm-1 5v4h2v-4h-2zm0 6v2h2v-2h-2z"/></svg>
+          </div>
+          <h3>Нет крупных складов рядом</h3>
+          <p>В ближайшем регионе не найти склада фурнитуры, способного закрыть весь объём производства.</p>
+        </article>
+        <article class="problem-card">
+          <div class="problem-card__icon">
+            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2 1 21h22L12 2zm0 4 7.5 13h-15L12 6zm-1 5v4h2v-4h-2zm0 6v2h2v-2h-2z"/></svg>
+          </div>
+          <h3>Нет живого наличия</h3>
+          <p>Нужная позиция «закончилась». Приходится ждать поставку и тормозить производство.</p>
+        </article>
+      </div>
+
+      <div class="problems__solution">
+        <div class="problems__solution-icon">
+          <svg viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+        </div>
+        <p>
+          <strong>10 лет мы успешно решаем эти проблемы.</strong>
+          60% швейников Сев. Кавказа шьют одежду на основе нашей фурнитуры. Объём нашего склада — <strong>1000 м²</strong>, весь ассортимент всегда в наличии. С нами вы в надёжных руках.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 9. ASSORTMENT ===== -->
+  <section class="assort">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <span class="eyebrow">Ассортимент склада</span>
+        <h2 class="section-title">Всё для швейного <span class="accent-yellow">производства</span></h2>
+        <p class="section-lead">Свыше 500 категорий — найдётся всё, что нужно мастеру. Вот лишь часть наличия:</p>
+      </div>
+
+      <div class="assort__cloud">
+        <span class="tag">Щипчики</span>
+        <span class="tag">Скотч</span>
+        <span class="tag">Зашивочная нить</span>
+        <span class="tag">Нейлон</span>
+        <span class="tag">Зип-ракеты</span>
+        <span class="tag">Пятновыводители</span>
+        <span class="tag">Лапки для замков</span>
+        <span class="tag">Улитки для бейки</span>
+        <span class="tag">Шпульки (восковые)</span>
+        <span class="tag">Светодиодные лампы</span>
+        <span class="tag">Пинцеты</span>
+        <span class="tag">Шнуровдеватели</span>
+        <span class="tag">Магниты</span>
+        <span class="tag">Наждачки для ножей</span>
+        <span class="tag">Ножи</span>
+        <span class="tag">Распариватели</span>
+        <span class="tag tag--more">и ещё 480+ позиций →</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 10. OWN PRODUCTION: TOP-3 ===== -->
+  <section class="own-prod">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <span class="eyebrow">Своё производство фурнитуры</span>
+        <h2 class="section-title">Тесьма, резинка и термоэтикетка — <span class="accent-yellow">в топе продаж</span></h2>
+        <p class="section-lead">Мы сами производим эти 3 комплектующих — наша визитная карточка среди швейников Сев. Кавказа.</p>
+      </div>
+
+      <div class="own-prod__grid">
+        <article class="prod-card">
+          <span class="prod-card__own">Своё производство</span>
+          <div class="prod-card__art">
+            <svg viewBox="0 0 100 100" aria-hidden="true">
+              <path fill="#4D61C4" d="M20 14h60c2 0 4 2 4 4v4H16v-4c0-2 2-4 4-4z"/>
+              <path fill="#6677CC" d="M16 26h68v8H16zM16 40h68v8H16zM16 54h68v8H16zM16 68h68v8H16zM16 82h68c0 2-2 4-4 4H20c-2 0-4-2-4-4z"/>
+              <path fill="#fff" opacity=".3" d="M16 22h68v2H16z"/>
+            </svg>
+          </div>
+          <h3>Тесьма</h3>
+          <p>Любая ширина, плотность, цвет. От строчечной до окантовочной. Производим под индивидуальные заказы.</p>
+        </article>
+
+        <article class="prod-card">
+          <span class="prod-card__own">Своё производство</span>
+          <div class="prod-card__art">
+            <svg viewBox="0 0 100 100" aria-hidden="true">
+              <g fill="#4D61C4">
+                <ellipse cx="50" cy="30" rx="34" ry="10"/>
+                <path d="M16 30v40c0 6 15 12 34 12s34-6 34-12V30c0 6-15 12-34 12S16 36 16 30z"/>
+              </g>
+              <ellipse cx="50" cy="30" rx="26" ry="6" fill="#fff" opacity=".3"/>
+              <g stroke="#FFD987" stroke-width="2" fill="none">
+                <path d="M16 50c10 4 24 6 34 6s24-2 34-6"/>
+                <path d="M16 60c10 4 24 6 34 6s24-2 34-6"/>
+              </g>
+            </svg>
+          </div>
+          <h3>Резинка</h3>
+          <p>Эластичная, прочная, не «садится» после стирок. Все типы плетений: продольная, поперечная, рифлёная.</p>
+        </article>
+
+        <article class="prod-card">
+          <span class="prod-card__own">Своё производство</span>
+          <div class="prod-card__art">
+            <svg viewBox="0 0 100 100" aria-hidden="true">
+              <rect x="22" y="18" width="56" height="64" rx="6" fill="#4D61C4"/>
+              <rect x="28" y="26" width="44" height="48" rx="3" fill="#fff"/>
+              <g fill="#4D61C4">
+                <rect x="34" y="34" width="32" height="3"/>
+                <rect x="34" y="42" width="24" height="3"/>
+                <rect x="34" y="50" width="28" height="3"/>
+              </g>
+              <circle cx="50" cy="64" r="6" fill="#FFD987"/>
+            </svg>
+          </div>
+          <h3>Термоэтикетка</h3>
+          <p>С вашим логотипом, размерным рядом, составом. Стойкое крепление, не выгорает, не отслаивается.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 11. 5 STEPS ===== -->
+  <section class="steps">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <span class="eyebrow">Производство под вас</span>
+        <h2 class="section-title">Делаем <span class="accent-yellow">5 шагов</span> навстречу</h2>
+      </div>
+
+      <div class="steps__grid">
+        <article class="step-card">
+          <div class="step-card__num">1</div>
+          <h3>Регулировка<br/>по плотности материала</h3>
+        </article>
+        <article class="step-card">
+          <div class="step-card__num">2</div>
+          <h3>Регулировка<br/>по размеру и форме</h3>
+        </article>
+        <article class="step-card">
+          <div class="step-card__num">3</div>
+          <h3>Любая<br/>цветовая гамма</h3>
+        </article>
+        <article class="step-card">
+          <div class="step-card__num">4</div>
+          <h3>Постоянное<br/>наличие на складе</h3>
+        </article>
+        <article class="step-card">
+          <div class="step-card__num">5</div>
+          <h3>Изготовление<br/>от 2 дней</h3>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 12. METRICS / STANDARD ===== -->
+  <section class="metrics">
+    <div class="container">
+      <div class="metrics__head">
+        <h2 class="section-title section-title--inverse">Тесьма, резинка и термоэтикетка — <span class="accent-yellow">3 надёжных компонента</span> в вашем изделии</h2>
+      </div>
+
+      <div class="metrics__grid">
+        <div class="metric">
+          <div class="metric__value">30%</div>
+          <div class="metric__label">рынка Сев. Кавказа</div>
+        </div>
+        <div class="metric">
+          <div class="metric__value">80%</div>
+          <div class="metric__label">рынка в КБР</div>
+        </div>
+        <div class="metric">
+          <div class="metric__value">10/10</div>
+          <div class="metric__label">клиентов остаются<br/>с нами навсегда</div>
+        </div>
+      </div>
+
+      <div class="metrics__tags">
+        <span class="m-tag"><span class="dot"></span>Мировой стандарт качества</span>
+        <span class="m-tag"><span class="dot"></span>Цены аналогичные китайским</span>
+        <span class="m-tag"><span class="dot"></span>Производство под индивидуальные требования</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 13. FINAL CTA ===== -->
+  <section class="final-cta" id="cta-final">
+    <div class="container">
+      <div class="final-cta__grid">
+        <div class="final-cta__text">
+          <span class="eyebrow">Финальный шаг</span>
+          <h2 class="section-title">Вы ведь <span class="accent-yellow">этого хотели?</span></h2>
+
+          <ul class="final-cta__benefits">
+            <li><svg viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Больше не ждать поставку из Китая месяцами</li>
+            <li><svg viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Найти ту самую позицию и качество в море ассортимента</li>
+            <li><svg viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Вместо 10–15 поставщиков положиться на одного</li>
+          </ul>
+
+          <div class="final-cta__claim">
+            <strong>Закупка фурнитуры может быть проще.</strong>
+            Звоните или пишите в мессенджерах — мы покажем.
+          </div>
+
+          <div class="final-cta__messengers">
+            <a href="https://wa.me/79280788466" class="msg msg--wa" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+              WhatsApp
+            </a>
+            <a href="https://t.me/+79280788466" class="msg msg--tg" aria-label="Telegram">
+              <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="m9.78 18.65.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg>
+              Telegram
+            </a>
+            <a href="viber://chat?number=79280788466" class="msg msg--vb" aria-label="Viber">
+              <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M16.04 7.69c-.41-.4-2.07-1.6-3.78-1.6-1.07 0-2.46.42-3.84 1.7-1.66 1.55-1.6 4.04.13 6.42 1.21 1.66 3.07 3.04 4.93 3.04.86 0 1.61-.32 2.21-.86l.66-.6c.18-.16.27-.41.16-.66l-.95-2.25c-.13-.31-.5-.41-.79-.21l-.74.55c-.16.12-.38.13-.55.02-.32-.2-.85-.61-1.39-1.34-.53-.73-.77-1.32-.87-1.66-.05-.18.01-.36.16-.46l.74-.55c.27-.2.32-.55.13-.82l-1.45-2.06c-.18-.27-.55-.31-.78-.09l-.66.6c-.4.36-.62.83-.66 1.32-.07 1.05.36 2.21 1.14 3.27.97 1.33 2.27 2.32 3.3 2.61.31.09.62.05.86-.13l.69-.5"/></svg>
+              Viber
+            </a>
+          </div>
+        </div>
+
+        <div class="final-cta__form-wrap">
+          <form class="cta-form" id="form-cta">
+            <h3>Получить расчёт за 15 минут</h3>
+            <p class="cta-form__note">Перезвоним, пришлём прайс на фурнитуру или прайс по пошиву.</p>
+
+            <label>
+              <span>Как к вам обращаться?</span>
+              <input type="text" name="name" placeholder="Ваше имя" required />
+            </label>
+
+            <label>
+              <span>Телефон</span>
+              <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required />
+            </label>
+
+            <label>
+              <span>Что интересует?</span>
+              <select name="topic">
+                <option>Пошив одежды</option>
+                <option>Фурнитура оптом</option>
+                <option>Тесьма / резинка / термоэтикетка</option>
+                <option>Другое</option>
+              </select>
+            </label>
+
+            <button type="submit" class="btn btn--accent btn--lg btn--block">Отправить заявку</button>
+            <p class="cta-form__policy">Нажимая «Отправить», вы соглашаетесь с <a href="#">политикой обработки данных</a></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer" id="contacts">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#" class="logo logo--light" aria-label="Швеймаркет">
+            <span class="logo__mark" aria-hidden="true">
+              <svg viewBox="0 0 32 32" width="32" height="32"><path fill="currentColor" d="M16 2 30 9v14L16 30 2 23V9Zm0 3-9.6 4.8v10.4L16 25l9.6-4.8V9.8Zm0 4 5.6 2.8L16 14.6l-5.6-2.8Zm-7 4.4 6 3v6.4l-6-3Zm14 0v6.4l-6 3v-6.4Z"/></svg>
+            </span>
+            <span class="logo__text">
+              <span class="logo__name">ШВЕЙМАРКЕТ</span>
+              <span class="logo__tagline">Оптовый пошив одежды</span>
+            </span>
+          </a>
+          <p class="footer__desc">Производство одежды и фурнитуры в Нальчике. 15 лет — для тех, кто выбирает стабильное качество и честные сроки.</p>
+        </div>
+
+        <div class="footer__col">
+          <h4>Навигация</h4>
+          <ul>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#clients">Клиенты</a></li>
+            <li><a href="#catalog">Каталог пошива</a></li>
+            <li><a href="#plan">Этапы работы</a></li>
+            <li><a href="#furniture">Фурнитура</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Контакты</h4>
+          <ul class="footer__contacts">
+            <li>
+              <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>
+              <span>Нальчик, ул. Безенгийская 10, КБР</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><path fill="currentColor" d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24 11.36 11.36 0 0 0 3.57.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.36 11.36 0 0 0 .57 3.57 1 1 0 0 1-.24 1.02z"/></svg>
+              <a href="tel:+79280788466">+7 (928) 078-84-66</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5z"/></svg>
+              <a href="mailto:info@sheymarket.ru">info@sheymarket.ru</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Мессенджеры</h4>
+          <div class="footer__msgs">
+            <a href="https://wa.me/79280788466" class="msg msg--wa" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M20.5 3.5C18.3 1.3 15.3 0 12 0 5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.7 1 3.7 1.5 5.8 1.5 6.6 0 12-5.4 12-12 0-3.3-1.3-6.3-3.5-8.4zM12 22c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-3.7 1 1-3.6-.2-.4c-1-1.7-1.6-3.6-1.6-5.6 0-5.5 4.5-10 10-10 2.7 0 5.2 1 7.1 2.9 1.9 1.9 2.9 4.4 2.9 7.1 0 5.5-4.5 10-10 10z"/></svg>
+              WhatsApp
+            </a>
+            <a href="https://t.me/+79280788466" class="msg msg--tg" aria-label="Telegram">
+              <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="m9.78 18.65.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg>
+              Telegram
+            </a>
+            <a href="viber://chat?number=79280788466" class="msg msg--vb" aria-label="Viber">
+              <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M19.5 4.2C18 2.7 15.6 2 12.5 2c-3.4 0-6 1.1-7.5 3.4-1 1.5-1.5 3.2-1.5 5.2 0 4 2.4 7.7 6 9.4l-.4 2.5c-.1.6.5 1 1 .7l2.4-1.4c.5.1 1 .1 1.5.1 3.4 0 6-1.1 7.5-3.4 1-1.5 1.5-3.2 1.5-5.2 0-2.5-.8-4.6-2.5-6.1z"/></svg>
+              Viber
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© 2025 Швеймаркет. Все права защищены.</span>
+        <span><a href="#">Политика конфиденциальности</a> · <a href="#">Согласие на обработку данных</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating contact button -->
+  <a href="#cta-final" class="float-cta" aria-label="Получить расчёт">
+    <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24 11.36 11.36 0 0 0 3.57.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.36 11.36 0 0 0 .57 3.57 1 1 0 0 1-.24 1.02z"/></svg>
+  </a>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
