@@ -67,7 +67,7 @@ ul, ol { list-style: none; }
 }
 
 @media (max-width: 1100px) { :root { --sp-section: 96px; } }
-@media (max-width: 600px)  { :root { --sp-section: 72px; } }
+@media (max-width: 600px)  { :root { --sp-section: 56px; } }
 
 /* ---------- Layout ---------- */
 .container {
@@ -883,7 +883,8 @@ section { padding: var(--sp-section) 0; }
 /* ===========================================================
    4. TESTIMONIAL
    =========================================================== */
-.testimonial { background: var(--c-bg); }
+.testimonial { background: var(--c-bg); padding: 64px 0; }
+@media (max-width: 600px) { .testimonial { padding: 48px 0; } }
 .testimonial__head {
   display: flex;
   justify-content: center;
@@ -1817,7 +1818,8 @@ body.no-scroll { overflow: hidden; }
 .problems,
 .assort,
 .steps,
-.metrics { position: relative; overflow: hidden; }
+.metrics,
+.fittings { position: relative; overflow: hidden; }
 .fur-intro__card { position: relative; overflow: hidden; }
 
 .deco {
@@ -1857,15 +1859,9 @@ body.no-scroll { overflow: hidden; }
   .deco--mt-1 { width: 170px; }
 }
 
-/* Mobile — shrink, keep all 6 visible but small */
+/* Mobile — hide decos completely (они декоративны, на мобильном ломают layout) */
 @media (max-width: 640px) {
-  .deco { filter: drop-shadow(0 6px 14px rgba(11,16,56,.24)); }
-  .deco--fi-1 { width: 110px; top: 14px; left: -44px; }
-  .deco--pr-1 { width: 120px; top: 22px; right: -48px; }
-  .deco--as-1 { width: 115px; top: 30px; left: -44px; }
-  .deco--as-2 { width: 105px; bottom: 28px; right: -36px; }
-  .deco--st-1 { width: 130px; top: 16px; right: -50px; }
-  .deco--mt-1 { width: 115px; top: 24px; left: -44px; }
+  .deco { display: none !important; }
 }
 
 /* ===== Flat-Lay Clothes Collage (About section) ===== */
