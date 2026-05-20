@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <radialGradient id="by-body" cx="50%" cy="40%" r="58%">
+      <stop offset="0%" stop-color="#FFE8A6"/>
+      <stop offset="55%" stop-color="#FFD556"/>
+      <stop offset="100%" stop-color="#C99416"/>
+    </radialGradient>
+    <radialGradient id="by-rim" cx="50%" cy="50%" r="50%">
+      <stop offset="80%" stop-color="#A8780C" stop-opacity="0"/>
+      <stop offset="94%" stop-color="#6B4D08" stop-opacity=".55"/>
+      <stop offset="100%" stop-color="#6B4D08" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="by-hole" cx="50%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#4A350A"/>
+      <stop offset="60%" stop-color="#2A1E05"/>
+      <stop offset="100%" stop-color="#1A1102"/>
+    </radialGradient>
+    <radialGradient id="by-shine" cx="35%" cy="28%" r="42%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity=".7"/>
+      <stop offset="60%" stop-color="#FFFFFF" stop-opacity=".08"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <ellipse cx="102" cy="172" rx="78" ry="14" fill="#1A1102" opacity=".26"/>
+  <circle cx="100" cy="100" r="88" fill="url(#by-body)"/>
+  <circle cx="100" cy="100" r="88" fill="url(#by-rim)"/>
+  <circle cx="100" cy="100" r="72" fill="none" stroke="#A8780C" stroke-width="2" opacity=".5"/>
+  <circle cx="100" cy="100" r="64" fill="none" stroke="#FFE8A6" stroke-width="1.2" opacity=".7"/>
+  <g>
+    <circle cx="76" cy="78" r="10" fill="url(#by-hole)"/>
+    <circle cx="124" cy="78" r="10" fill="url(#by-hole)"/>
+    <circle cx="76" cy="124" r="10" fill="url(#by-hole)"/>
+    <circle cx="124" cy="124" r="10" fill="url(#by-hole)"/>
+  </g>
+  <path d="M76 78 L124 78 M76 124 L124 124" stroke="#2E3A85" stroke-width="2.6" stroke-linecap="round" opacity=".85"/>
+  <ellipse cx="78" cy="68" rx="40" ry="24" fill="url(#by-shine)"/>
+</svg>

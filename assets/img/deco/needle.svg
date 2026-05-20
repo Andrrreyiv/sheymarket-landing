@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="nd-body" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E8EBF0"/>
+      <stop offset="35%" stop-color="#F8F9FB"/>
+      <stop offset="55%" stop-color="#9CA5B5"/>
+      <stop offset="100%" stop-color="#5C6477"/>
+    </linearGradient>
+    <linearGradient id="nd-thread" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFD556"/>
+      <stop offset="100%" stop-color="#C99416"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="100" cy="178" rx="66" ry="6" fill="#000" opacity=".18"/>
+  <!-- needle body rotated -->
+  <g transform="rotate(-32 100 100)">
+    <!-- eye -->
+    <ellipse cx="35" cy="100" rx="14" ry="9" fill="url(#nd-body)"/>
+    <ellipse cx="35" cy="100" rx="6" ry="4" fill="#1A1F2E"/>
+    <!-- shaft -->
+    <path d="M48 95 L170 99 L170 101 L48 105 Z" fill="url(#nd-body)"/>
+    <!-- highlight along shaft -->
+    <path d="M50 96 L168 99.5" stroke="#FFFFFF" stroke-width="1" opacity=".7"/>
+    <!-- tip -->
+    <path d="M170 99 L186 100 L170 101 Z" fill="#3A4254"/>
+    <!-- thread loop -->
+    <path d="M35 100 Q15 110 8 130 Q3 148 18 156" stroke="url(#nd-thread)" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+    <path d="M35 100 Q22 105 18 122" stroke="#C99416" stroke-width="1.6" fill="none" stroke-linecap="round" opacity=".7"/>
+  </g>
+</svg>

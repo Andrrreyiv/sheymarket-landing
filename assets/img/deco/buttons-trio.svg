@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" width="240" height="200">
+  <defs>
+    <radialGradient id="bt-red" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#FF9A91"/>
+      <stop offset="60%" stop-color="#E0392F"/>
+      <stop offset="100%" stop-color="#7E1812"/>
+    </radialGradient>
+    <radialGradient id="bt-green" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#82E0B8"/>
+      <stop offset="55%" stop-color="#43C68F"/>
+      <stop offset="100%" stop-color="#1F7A53"/>
+    </radialGradient>
+    <radialGradient id="bt-white" cx="40%" cy="32%" r="60%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="70%" stop-color="#E6E9F0"/>
+      <stop offset="100%" stop-color="#8A92A6"/>
+    </radialGradient>
+    <radialGradient id="bt-hole" cx="50%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#2A1E05"/>
+      <stop offset="100%" stop-color="#06092A"/>
+    </radialGradient>
+  </defs>
+  <ellipse cx="56" cy="172" rx="42" ry="8" fill="#000" opacity=".22"/>
+  <ellipse cx="124" cy="172" rx="44" ry="8" fill="#000" opacity=".22"/>
+  <ellipse cx="194" cy="172" rx="40" ry="8" fill="#000" opacity=".22"/>
+  <!-- left red -->
+  <g transform="translate(56 96)">
+    <circle r="46" fill="url(#bt-red)"/>
+    <circle r="38" fill="none" stroke="#7E1812" stroke-width="1.3" opacity=".55"/>
+    <circle cx="-12" cy="-12" r="5" fill="url(#bt-hole)"/>
+    <circle cx="12" cy="-12" r="5" fill="url(#bt-hole)"/>
+    <circle cx="-12" cy="12" r="5" fill="url(#bt-hole)"/>
+    <circle cx="12" cy="12" r="5" fill="url(#bt-hole)"/>
+    <path d="M-12 -12 L12 12 M12 -12 L-12 12" stroke="#FFD556" stroke-width="1.6" stroke-linecap="round" opacity=".75"/>
+    <ellipse cx="-14" cy="-22" rx="20" ry="11" fill="#FFFFFF" opacity=".35"/>
+  </g>
+  <!-- center green (larger, in front) -->
+  <g transform="translate(124 96)">
+    <circle r="52" fill="url(#bt-green)"/>
+    <circle r="42" fill="none" stroke="#1F7A53" stroke-width="1.4" opacity=".5"/>
+    <circle cx="-14" cy="-14" r="6" fill="url(#bt-hole)"/>
+    <circle cx="14" cy="-14" r="6" fill="url(#bt-hole)"/>
+    <circle cx="-14" cy="14" r="6" fill="url(#bt-hole)"/>
+    <circle cx="14" cy="14" r="6" fill="url(#bt-hole)"/>
+    <path d="M-14 -14 L14 -14 M-14 14 L14 14" stroke="#2E3A85" stroke-width="1.8" stroke-linecap="round" opacity=".82"/>
+    <ellipse cx="-16" cy="-26" rx="24" ry="13" fill="#FFFFFF" opacity=".42"/>
+  </g>
+  <!-- right white -->
+  <g transform="translate(194 96)">
+    <circle r="44" fill="url(#bt-white)"/>
+    <circle r="36" fill="none" stroke="#8A92A6" stroke-width="1.2" opacity=".5"/>
+    <circle cx="-11" cy="-11" r="5" fill="url(#bt-hole)"/>
+    <circle cx="11" cy="-11" r="5" fill="url(#bt-hole)"/>
+    <circle cx="-11" cy="11" r="5" fill="url(#bt-hole)"/>
+    <circle cx="11" cy="11" r="5" fill="url(#bt-hole)"/>
+    <ellipse cx="-12" cy="-20" rx="18" ry="9" fill="#FFFFFF" opacity=".55"/>
+  </g>
+</svg>
