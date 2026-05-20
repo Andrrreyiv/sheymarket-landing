@@ -1644,7 +1644,7 @@ section { padding: var(--sp-section) 0; }
 .msg:hover { transform: translateY(-2px); box-shadow: var(--sh-md); filter: brightness(1.05); }
 .msg--wa { background: #25D366; }
 .msg--tg { background: #229ED9; }
-.msg--vb { background: #7360F2; }
+.msg--max { background: #005FF9; }
 
 .cta-form {
   background: #fff;
@@ -1866,4 +1866,51 @@ body.no-scroll { overflow: hidden; }
   .deco--as-2 { width: 105px; bottom: 28px; right: -36px; }
   .deco--st-1 { width: 130px; top: 16px; right: -50px; }
   .deco--mt-1 { width: 115px; top: 24px; left: -44px; }
+}
+
+/* ===== WB Photo Collage (About section) ===== */
+.wb-collage {
+  position: relative;
+  border-radius: var(--r-xl);
+  overflow: hidden;
+  max-width: 440px;
+  margin: 0 auto;
+  border: 5px solid var(--c-accent);
+  box-shadow: var(--sh-lg);
+}
+.wb-collage__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 3px;
+  background: var(--c-accent);
+  aspect-ratio: 3/4;
+}
+.wbc {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .35s ease;
+}
+.wbc--1 { grid-column: 1/3; grid-row: 1/3; }
+.wb-collage:hover .wbc { transform: scale(1.04); }
+.wb-collage__badge {
+  position: absolute;
+  bottom: 14px;
+  left: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,.92);
+  backdrop-filter: blur(6px);
+  border-radius: 10px;
+  padding: 6px 12px 6px 8px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--c-text);
+  box-shadow: 0 2px 12px rgba(0,0,0,.15);
+}
+@media (max-width: 640px) {
+  .wb-collage { max-width: 100%; }
 }
