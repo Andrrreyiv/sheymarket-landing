@@ -67,7 +67,7 @@ sheymarket-landing/
 
 - Адрес: Нальчик, ул. Безенгийская 10
 - Телефон: +7 (928) 078-84-66
-- Email: info@sheymarket.ru *(placeholder — заменить на финальный после согласования)*
+- Email: Mizievazarina9@gmail.com
 
 ## Доработки
 
