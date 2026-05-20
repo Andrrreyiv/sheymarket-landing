@@ -749,9 +749,17 @@ section { padding: var(--sp-section) 0; }
   .about__summary { padding: 110px 32px 32px; }
 }
 @media (max-width: 600px) {
-  .about__summary-wrap { margin-top: 70px; }
-  .about__summary-headline { left: 18px; right: 18px; }
-  .about__summary { padding: 90px 22px 26px; gap: 18px; }
+  /* Headline becomes static flow element — no more overlap bug */
+  .about__summary-wrap { margin-top: 24px; padding-top: 0; }
+  .about__summary-headline {
+    position: static;
+    font-size: clamp(34px, 10vw, 48px);
+    line-height: .95;
+    margin-bottom: 16px;
+    text-shadow: none;
+    color: var(--c-text);
+  }
+  .about__summary { padding: 28px 22px 26px; gap: 18px; }
 }
 
 @media (max-width: 1024px) {
@@ -1917,6 +1925,11 @@ body.no-scroll { overflow: hidden; }
 @media (max-width: 640px) {
   .flatlay-collage { max-width: 100%; }
   .flatlay-collage__grid { grid-template-rows: 140px 80px 140px; }
+}
+/* collage placed inside hero photo slot */
+.hero__photo .flatlay-collage {
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* ===== Deco photo items — real product photos as floating cards ===== */
