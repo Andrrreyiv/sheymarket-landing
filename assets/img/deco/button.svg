@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320" height="320">
+  <defs>
+    <radialGradient id="btn-body" cx="38%" cy="32%" r="72%">
+      <stop offset="0%" stop-color="#FFE9C7"/>
+      <stop offset="22%" stop-color="#F3D2A3"/>
+      <stop offset="55%" stop-color="#C9A074"/>
+      <stop offset="82%" stop-color="#8C6843"/>
+      <stop offset="100%" stop-color="#4E3621"/>
+    </radialGradient>
+    <radialGradient id="btn-rim" cx="50%" cy="50%" r="50%">
+      <stop offset="80%" stop-color="rgba(80,52,28,0)"/>
+      <stop offset="93%" stop-color="rgba(80,52,28,.65)"/>
+      <stop offset="100%" stop-color="rgba(40,24,8,.9)"/>
+    </radialGradient>
+    <radialGradient id="btn-inner-recess" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(80,52,28,.55)"/>
+      <stop offset="55%" stop-color="rgba(80,52,28,.18)"/>
+      <stop offset="100%" stop-color="rgba(80,52,28,0)"/>
+    </radialGradient>
+    <radialGradient id="btn-hole" cx="50%" cy="38%" r="60%">
+      <stop offset="0%" stop-color="#1A0F05"/>
+      <stop offset="60%" stop-color="#2A1808"/>
+      <stop offset="100%" stop-color="#503520"/>
+    </radialGradient>
+    <radialGradient id="btn-hole-rim" cx="50%" cy="50%" r="55%">
+      <stop offset="78%" stop-color="rgba(60,38,18,0)"/>
+      <stop offset="100%" stop-color="rgba(40,24,8,.8)"/>
+    </radialGradient>
+    <linearGradient id="btn-thread" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFE8A0"/>
+      <stop offset="50%" stop-color="#E6B348"/>
+      <stop offset="100%" stop-color="#A87822"/>
+    </linearGradient>
+    <radialGradient id="btn-highlight-main" cx="42%" cy="28%" r="35%">
+      <stop offset="0%" stop-color="rgba(255,255,255,.85)"/>
+      <stop offset="50%" stop-color="rgba(255,255,255,.25)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </radialGradient>
+    <radialGradient id="btn-highlight-soft" cx="60%" cy="70%" r="38%">
+      <stop offset="0%" stop-color="rgba(255,230,170,.35)"/>
+      <stop offset="100%" stop-color="rgba(255,230,170,0)"/>
+    </radialGradient>
+    <radialGradient id="btn-cast-shadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(8,4,2,.5)"/>
+      <stop offset="65%" stop-color="rgba(8,4,2,.15)"/>
+      <stop offset="100%" stop-color="rgba(8,4,2,0)"/>
+    </radialGradient>
+    <filter id="btn-soft" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- cast shadow under button -->
+  <ellipse cx="170" cy="278" rx="118" ry="14" fill="url(#btn-cast-shadow)"/>
+
+  <g transform="translate(160 152)">
+    <!-- main body -->
+    <circle r="138" fill="url(#btn-body)"/>
+    <!-- outer rim shadow -->
+    <circle r="138" fill="url(#btn-rim)"/>
+    <!-- bevel ring -->
+    <circle r="118" fill="none" stroke="rgba(255,234,200,.45)" stroke-width="1.2"/>
+    <circle r="115" fill="none" stroke="rgba(70,42,20,.45)" stroke-width="1"/>
+    <!-- inner concave recess -->
+    <circle r="92" fill="url(#btn-inner-recess)"/>
+    <circle r="92" fill="none" stroke="rgba(255,236,200,.35)" stroke-width="0.8"/>
+
+    <!-- four holes, slightly inset square -->
+    <g>
+      <g transform="translate(-34 -34)">
+        <circle r="14" fill="url(#btn-hole-rim)"/>
+        <circle r="12" fill="url(#btn-hole)"/>
+        <ellipse cx="-2" cy="-3" rx="5" ry="2" fill="rgba(255,236,200,.35)"/>
+      </g>
+      <g transform="translate(34 -34)">
+        <circle r="14" fill="url(#btn-hole-rim)"/>
+        <circle r="12" fill="url(#btn-hole)"/>
+        <ellipse cx="-2" cy="-3" rx="5" ry="2" fill="rgba(255,236,200,.32)"/>
+      </g>
+      <g transform="translate(-34 34)">
+        <circle r="14" fill="url(#btn-hole-rim)"/>
+        <circle r="12" fill="url(#btn-hole)"/>
+        <ellipse cx="-2" cy="-3" rx="5" ry="2" fill="rgba(255,236,200,.28)"/>
+      </g>
+      <g transform="translate(34 34)">
+        <circle r="14" fill="url(#btn-hole-rim)"/>
+        <circle r="12" fill="url(#btn-hole)"/>
+        <ellipse cx="-2" cy="-3" rx="5" ry="2" fill="rgba(255,236,200,.3)"/>
+      </g>
+    </g>
+
+    <!-- threads (X-pattern with depth) -->
+    <g filter="url(#btn-soft)">
+      <path d="M-34 -34 L34 34" stroke="url(#btn-thread)" stroke-width="6.5" stroke-linecap="round"/>
+      <path d="M34 -34 L-34 34" stroke="url(#btn-thread)" stroke-width="6.5" stroke-linecap="round"/>
+      <!-- thread highlights -->
+      <path d="M-30 -36 L32 30" stroke="rgba(255,250,220,.55)" stroke-width="1.4" stroke-linecap="round"/>
+      <path d="M30 -36 L-32 30" stroke="rgba(255,250,220,.55)" stroke-width="1.4" stroke-linecap="round"/>
+      <!-- thread shadow below -->
+      <path d="M-32 -30 L36 38" stroke="rgba(50,30,8,.4)" stroke-width="1.2" stroke-linecap="round"/>
+      <path d="M32 -30 L-36 38" stroke="rgba(50,30,8,.4)" stroke-width="1.2" stroke-linecap="round"/>
+    </g>
+
+    <!-- main glossy highlight -->
+    <ellipse cx="-30" cy="-58" rx="76" ry="42" fill="url(#btn-highlight-main)"/>
+    <!-- secondary subtle highlight -->
+    <ellipse cx="38" cy="44" rx="44" ry="22" fill="url(#btn-highlight-soft)"/>
+    <!-- tiny specular dot -->
+    <ellipse cx="-58" cy="-78" rx="14" ry="6" fill="rgba(255,255,255,.7)"/>
+    <ellipse cx="-58" cy="-78" rx="6" ry="3" fill="rgba(255,255,255,.95)"/>
+  </g>
+</svg>

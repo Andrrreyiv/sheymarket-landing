@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320" height="320">
+  <defs>
+    <linearGradient id="sc-blade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="18%" stop-color="#E6EAF0"/>
+      <stop offset="45%" stop-color="#B5BCC8"/>
+      <stop offset="72%" stop-color="#7A8295"/>
+      <stop offset="100%" stop-color="#3E4658"/>
+    </linearGradient>
+    <linearGradient id="sc-blade-edge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FBFCFE"/>
+      <stop offset="50%" stop-color="#D8DDE6"/>
+      <stop offset="100%" stop-color="#8089A0"/>
+    </linearGradient>
+    <radialGradient id="sc-pivot" cx="40%" cy="38%" r="58%">
+      <stop offset="0%" stop-color="#F4F6FA"/>
+      <stop offset="55%" stop-color="#9BA4B6"/>
+      <stop offset="100%" stop-color="#3A4254"/>
+    </radialGradient>
+    <radialGradient id="sc-screw" cx="40%" cy="38%" r="58%">
+      <stop offset="0%" stop-color="#E8ECF2"/>
+      <stop offset="100%" stop-color="#5C6477"/>
+    </radialGradient>
+    <linearGradient id="sc-handle" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2E3A85"/>
+      <stop offset="55%" stop-color="#4D61C4"/>
+      <stop offset="100%" stop-color="#1A2156"/>
+    </linearGradient>
+    <linearGradient id="sc-handle-shine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="rgba(255,255,255,0)"/>
+      <stop offset="50%" stop-color="rgba(255,255,255,.5)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </linearGradient>
+    <radialGradient id="sc-shadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(8,4,2,.55)"/>
+      <stop offset="65%" stop-color="rgba(8,4,2,.15)"/>
+      <stop offset="100%" stop-color="rgba(8,4,2,0)"/>
+    </radialGradient>
+  </defs>
+
+  <ellipse cx="170" cy="288" rx="118" ry="11" fill="url(#sc-shadow)"/>
+
+  <g transform="translate(160 160) rotate(-18)">
+    <!-- upper blade -->
+    <g>
+      <path d="M-6 -10 L130 -34 Q138 -28 134 -22 L-2 8 Z" fill="url(#sc-blade)" stroke="rgba(40,46,60,.65)" stroke-width="1.2" stroke-linejoin="round"/>
+      <!-- razor edge highlight -->
+      <path d="M0 6 L132 -22" stroke="url(#sc-blade-edge)" stroke-width="2.4" stroke-linecap="round"/>
+      <path d="M2 4 L130 -22" stroke="rgba(255,255,255,.55)" stroke-width="0.8"/>
+      <!-- top reflective band -->
+      <path d="M-2 -8 L128 -32" stroke="rgba(255,255,255,.45)" stroke-width="1.4"/>
+      <!-- specular -->
+      <path d="M28 -16 L82 -26" stroke="rgba(255,255,255,.85)" stroke-width="2" stroke-linecap="round"/>
+      <!-- blade tip detail -->
+      <circle cx="132" cy="-26" r="2.2" fill="#FFFFFF" opacity=".9"/>
+    </g>
+
+    <!-- lower blade -->
+    <g>
+      <path d="M-6 10 L130 34 Q138 28 134 22 L-2 -8 Z" fill="url(#sc-blade)" stroke="rgba(40,46,60,.65)" stroke-width="1.2" stroke-linejoin="round"/>
+      <path d="M0 -6 L132 22" stroke="url(#sc-blade-edge)" stroke-width="2.4" stroke-linecap="round"/>
+      <path d="M2 -4 L130 22" stroke="rgba(255,255,255,.4)" stroke-width="0.8"/>
+      <path d="M-2 8 L128 32" stroke="rgba(255,255,255,.3)" stroke-width="1.2"/>
+      <path d="M28 16 L82 26" stroke="rgba(255,255,255,.7)" stroke-width="1.6" stroke-linecap="round"/>
+      <circle cx="132" cy="26" r="2.2" fill="#FFFFFF" opacity=".85"/>
+    </g>
+
+    <!-- pivot screw -->
+    <circle r="14" fill="url(#sc-pivot)" stroke="rgba(28,34,48,.8)" stroke-width="1.2"/>
+    <circle r="8" fill="url(#sc-screw)"/>
+    <path d="M-5 0 L5 0" stroke="rgba(28,34,48,.85)" stroke-width="1.6" stroke-linecap="round"/>
+    <ellipse cx="-3" cy="-3" rx="3" ry="1.6" fill="rgba(255,255,255,.85)"/>
+
+    <!-- upper handle ring -->
+    <g>
+      <path d="M-8 -10 Q-60 -30 -94 -64 Q-118 -88 -110 -110 Q-100 -130 -78 -126 Q-58 -120 -46 -100 Q-36 -82 -32 -62 Q-30 -42 -22 -28 Q-14 -18 -8 -10 Z" fill="url(#sc-handle)" stroke="rgba(20,24,60,.85)" stroke-width="1.6" stroke-linejoin="round"/>
+      <!-- inner ring cut-out -->
+      <path d="M-44 -52 Q-58 -78 -84 -94 Q-104 -104 -98 -88 Q-92 -72 -76 -64 Q-58 -54 -50 -42 Q-44 -50 -44 -52 Z" fill="#0E1228" opacity=".8"/>
+      <!-- shine -->
+      <path d="M-72 -118 Q-92 -100 -100 -78" stroke="rgba(180,200,255,.65)" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+      <path d="M-40 -90 Q-52 -78 -56 -64" stroke="rgba(255,255,255,.45)" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+    </g>
+
+    <!-- lower handle ring -->
+    <g>
+      <path d="M-8 10 Q-60 30 -94 64 Q-118 88 -110 110 Q-100 130 -78 126 Q-58 120 -46 100 Q-36 82 -32 62 Q-30 42 -22 28 Q-14 18 -8 10 Z" fill="url(#sc-handle)" stroke="rgba(20,24,60,.85)" stroke-width="1.6" stroke-linejoin="round"/>
+      <path d="M-44 52 Q-58 78 -84 94 Q-104 104 -98 88 Q-92 72 -76 64 Q-58 54 -50 42 Q-44 50 -44 52 Z" fill="#0E1228" opacity=".8"/>
+      <path d="M-72 118 Q-92 100 -100 78" stroke="rgba(180,200,255,.55)" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <path d="M-40 90 Q-52 78 -56 64" stroke="rgba(255,255,255,.4)" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>

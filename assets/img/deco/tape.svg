@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320" height="320">
+  <defs>
+    <radialGradient id="tp-case" cx="38%" cy="32%" r="78%">
+      <stop offset="0%" stop-color="#FFF1B8"/>
+      <stop offset="25%" stop-color="#FFD556"/>
+      <stop offset="65%" stop-color="#E0A618"/>
+      <stop offset="100%" stop-color="#7A5408"/>
+    </radialGradient>
+    <radialGradient id="tp-case-rim" cx="50%" cy="50%" r="50%">
+      <stop offset="82%" stop-color="rgba(80,52,8,0)"/>
+      <stop offset="94%" stop-color="rgba(80,52,8,.55)"/>
+      <stop offset="100%" stop-color="rgba(40,24,4,.85)"/>
+    </radialGradient>
+    <radialGradient id="tp-case-recess" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(80,52,8,.45)"/>
+      <stop offset="55%" stop-color="rgba(80,52,8,.15)"/>
+      <stop offset="100%" stop-color="rgba(80,52,8,0)"/>
+    </radialGradient>
+    <radialGradient id="tp-hub" cx="40%" cy="38%" r="60%">
+      <stop offset="0%" stop-color="#F4F6FA"/>
+      <stop offset="55%" stop-color="#9BA4B6"/>
+      <stop offset="100%" stop-color="#3A4254"/>
+    </radialGradient>
+    <linearGradient id="tp-tape" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFE9A0"/>
+      <stop offset="40%" stop-color="#FFD556"/>
+      <stop offset="100%" stop-color="#C68A0E"/>
+    </linearGradient>
+    <linearGradient id="tp-tape-edge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(120,80,8,.6)"/>
+      <stop offset="50%" stop-color="rgba(120,80,8,.15)"/>
+      <stop offset="100%" stop-color="rgba(120,80,8,.6)"/>
+    </linearGradient>
+    <linearGradient id="tp-hook" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E8ECF2"/>
+      <stop offset="50%" stop-color="#9BA4B6"/>
+      <stop offset="100%" stop-color="#3A4254"/>
+    </linearGradient>
+    <radialGradient id="tp-highlight" cx="42%" cy="28%" r="38%">
+      <stop offset="0%" stop-color="rgba(255,255,255,.85)"/>
+      <stop offset="50%" stop-color="rgba(255,255,255,.25)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </radialGradient>
+    <radialGradient id="tp-shadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(8,4,2,.55)"/>
+      <stop offset="65%" stop-color="rgba(8,4,2,.15)"/>
+      <stop offset="100%" stop-color="rgba(8,4,2,0)"/>
+    </radialGradient>
+  </defs>
+
+  <ellipse cx="160" cy="288" rx="120" ry="12" fill="url(#tp-shadow)"/>
+
+  <!-- unrolled tape strip exiting to the right -->
+  <g transform="translate(160 160)">
+    <!-- tape body curve coming out from case -->
+    <path d="M70 8 Q110 14 140 6 L150 -22 Q118 -14 78 -22 Z" fill="url(#tp-tape)" stroke="rgba(120,80,8,.7)" stroke-width="1"/>
+    <!-- edge shading top/bottom -->
+    <path d="M78 -22 Q118 -14 150 -22" stroke="rgba(120,80,8,.45)" stroke-width=".7" fill="none"/>
+    <path d="M70 8 Q110 14 140 6" stroke="rgba(120,80,8,.6)" stroke-width=".7" fill="none"/>
+    <!-- tape highlight -->
+    <path d="M82 -16 Q118 -8 146 -16" stroke="rgba(255,250,210,.6)" stroke-width="1.2" fill="none"/>
+
+    <!-- ruler ticks on tape -->
+    <g stroke="#2A1808" stroke-linecap="butt" fill="none">
+      <line x1="86" y1="-22" x2="86" y2="-12" stroke-width="1.2"/>
+      <line x1="94" y1="-22" x2="94" y2="-16" stroke-width=".7"/>
+      <line x1="102" y1="-22" x2="102" y2="-16" stroke-width=".7"/>
+      <line x1="110" y1="-22" x2="110" y2="-12" stroke-width="1.2"/>
+      <line x1="118" y1="-22" x2="118" y2="-16" stroke-width=".7"/>
+      <line x1="126" y1="-22" x2="126" y2="-16" stroke-width=".7"/>
+      <line x1="134" y1="-22" x2="134" y2="-12" stroke-width="1.2"/>
+      <line x1="142" y1="-22" x2="142" y2="-16" stroke-width=".7"/>
+    </g>
+    <!-- ruler numbers -->
+    <g fill="#2A1808" font-family="Manrope, Arial, sans-serif" font-size="6" font-weight="700" text-anchor="middle">
+      <text x="86" y="-4">10</text>
+      <text x="110" y="-4">20</text>
+      <text x="134" y="-4">30</text>
+    </g>
+
+    <!-- metal hook tip at the end of tape -->
+    <g>
+      <path d="M138 -24 L156 -24 L156 8 L138 8 L138 -22 Z" fill="url(#tp-hook)" stroke="rgba(40,46,60,.8)" stroke-width="1"/>
+      <rect x="142" y="-22" width="3" height="28" fill="rgba(255,255,255,.55)"/>
+      <!-- rivets -->
+      <circle cx="148" cy="-12" r="2.2" fill="url(#tp-hook)" stroke="rgba(28,34,48,.7)" stroke-width=".5"/>
+      <circle cx="148" cy="0" r="2.2" fill="url(#tp-hook)" stroke="rgba(28,34,48,.7)" stroke-width=".5"/>
+      <ellipse cx="147" cy="-13" rx=".8" ry=".4" fill="rgba(255,255,255,.85)"/>
+      <ellipse cx="147" cy="-1" rx=".8" ry=".4" fill="rgba(255,255,255,.85)"/>
+    </g>
+
+    <!-- main case body (round) -->
+    <circle r="120" fill="url(#tp-case)"/>
+    <circle r="120" fill="url(#tp-case-rim)"/>
+
+    <!-- inset bevel ring -->
+    <circle r="104" fill="none" stroke="rgba(255,234,150,.55)" stroke-width="1.3"/>
+    <circle r="101" fill="none" stroke="rgba(110,70,8,.45)" stroke-width="1"/>
+
+    <!-- inner recessed window -->
+    <circle r="78" fill="url(#tp-case-recess)"/>
+    <circle r="78" fill="none" stroke="rgba(255,236,180,.45)" stroke-width=".8"/>
+
+    <!-- coiled tape rings visible inside window -->
+    <g opacity=".95">
+      <circle r="74" fill="none" stroke="rgba(200,140,30,.45)" stroke-width="1"/>
+      <circle r="68" fill="none" stroke="rgba(200,140,30,.35)" stroke-width="1"/>
+      <circle r="62" fill="none" stroke="rgba(200,140,30,.3)" stroke-width="1"/>
+      <circle r="56" fill="none" stroke="rgba(200,140,30,.25)" stroke-width="1"/>
+      <circle r="50" fill="none" stroke="rgba(200,140,30,.22)" stroke-width="1"/>
+      <circle r="44" fill="none" stroke="rgba(200,140,30,.2)" stroke-width="1"/>
+      <circle r="38" fill="none" stroke="rgba(200,140,30,.18)" stroke-width="1"/>
+    </g>
+
+    <!-- central metal hub -->
+    <circle r="26" fill="url(#tp-hub)" stroke="rgba(28,34,48,.8)" stroke-width="1.2"/>
+    <circle r="18" fill="url(#tp-hub)" opacity=".7"/>
+    <circle r="8" fill="#2E3445" stroke="rgba(255,255,255,.55)" stroke-width=".6"/>
+    <ellipse cx="-3" cy="-3" rx="3" ry="1.6" fill="rgba(255,255,255,.85)"/>
+
+    <!-- "СМ" label on case -->
+    <text x="0" y="78" fill="#2A1808" font-family="Manrope, Arial, sans-serif" font-size="14" font-weight="800" text-anchor="middle" opacity=".55">СМ</text>
+
+    <!-- exit slot where tape comes out -->
+    <path d="M68 -22 L80 -22 L80 10 L68 10 Z" fill="rgba(50,30,8,.6)"/>
+    <rect x="70" y="-20" width="2" height="28" fill="rgba(255,255,255,.25)"/>
+
+    <!-- main glossy highlight on case -->
+    <ellipse cx="-30" cy="-58" rx="68" ry="38" fill="url(#tp-highlight)"/>
+    <ellipse cx="-52" cy="-78" rx="14" ry="6" fill="rgba(255,255,255,.7)"/>
+    <ellipse cx="-52" cy="-78" rx="6" ry="3" fill="rgba(255,255,255,.95)"/>
+    <!-- secondary lower highlight -->
+    <ellipse cx="36" cy="44" rx="38" ry="18" fill="rgba(255,240,180,.3)"/>
+  </g>
+</svg>

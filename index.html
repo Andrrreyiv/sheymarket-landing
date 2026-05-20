@@ -148,13 +148,19 @@
             </div>
 
             <!-- inline capture form: floating card on top of hero photo -->
-            <form class="hero__form" action="#" method="post" id="form-hero" aria-label="Получить расчёт за 15 минут">
+            <form class="hero__form" action="https://formsubmit.co/Mizievazarina9@gmail.com" method="POST" id="form-hero" aria-label="Получить расчёт за 15 минут">
+              <input type="hidden" name="_cc" value="brycun@mail.ru">
+              <input type="hidden" name="_subject" value="Заявка с сайта Швеймаркет — Hero">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_next" value="https://sheymarket.ru/?sent=1">
+              <input type="text" name="_honey" style="display:none">
               <div class="hero__form-head">
                 <strong>Получите расчёт за 15 минут</strong>
                 <span>Перезвоним и пришлём прайс по фурнитуре или образцам</span>
               </div>
-              <input type="text" name="name" placeholder="Как к вам обращаться?" required />
-              <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required />
+              <input type="text" name="Имя" placeholder="Как к вам обращаться?" required />
+              <input type="tel" name="Телефон" placeholder="+7 (___) ___-__-__" required />
               <button type="submit" class="btn btn--accent btn--block">Отправить заявку</button>
               <p class="hero__form-policy">Нажимая «Отправить», вы соглашаетесь с <a href="#">политикой обработки данных</a></p>
             </form>
@@ -431,11 +437,9 @@
 
   <!-- ===== 7. FURNITURE INTRO ===== -->
   <section class="fur-intro" id="furniture">
-    <img class="deco deco--photo deco--fi-1" src="assets/img/deco/photos/buttons-d.jpg" alt="" aria-hidden="true" loading="lazy">
-    <img class="deco deco--photo deco--fi-2" src="assets/img/deco/photos/zipper-a.jpg" alt="" aria-hidden="true" loading="lazy">
+    <img class="deco deco--fi-1" src="assets/img/deco/button.svg" alt="" aria-hidden="true" loading="lazy">
     <div class="container">
       <div class="fur-intro__card">
-        <img class="deco deco--photo deco--fi-3" src="assets/img/deco/photos/buttons-a.jpg" alt="" aria-hidden="true" loading="lazy">
         <div class="fur-intro__text">
           <span class="eyebrow eyebrow--inverse">Фурнитура для швейных производств</span>
           <h2 class="section-title section-title--inverse">Пришли к нам <span class="accent-yellow">за фурнитурой?</span></h2>
@@ -464,8 +468,7 @@
 
   <!-- ===== 8. 3 PROBLEMS ===== -->
   <section class="problems">
-    <img class="deco deco--photo deco--pr-1" src="assets/img/deco/photos/needle-a.jpg" alt="" aria-hidden="true" loading="lazy">
-    <img class="deco deco--photo deco--pr-2" src="assets/img/deco/photos/buttons-e.jpg" alt="" aria-hidden="true" loading="lazy">
+    <img class="deco deco--pr-1" src="assets/img/deco/scissors.svg" alt="" aria-hidden="true" loading="lazy">
     <div class="container">
       <div class="section-head section-head--center">
         <span class="eyebrow">Боль рынка</span>
@@ -518,9 +521,8 @@
 
   <!-- ===== 9. ASSORTMENT ===== -->
   <section class="assort">
-    <img class="deco deco--photo deco--as-1" src="assets/img/deco/photos/thread-c.jpg" alt="" aria-hidden="true" loading="lazy">
-    <img class="deco deco--photo deco--as-2" src="assets/img/deco/photos/scissors-a.jpg" alt="" aria-hidden="true" loading="lazy">
-    <img class="deco deco--photo deco--as-3" src="assets/img/deco/photos/buttons-b.jpg" alt="" aria-hidden="true" loading="lazy">
+    <img class="deco deco--as-1" src="assets/img/deco/spool.svg" alt="" aria-hidden="true" loading="lazy">
+    <img class="deco deco--as-2" src="assets/img/deco/thimble.svg" alt="" aria-hidden="true" loading="lazy">
     <div class="container">
       <div class="section-head section-head--center">
         <span class="eyebrow">Ассортимент склада</span>
@@ -588,8 +590,7 @@
 
   <!-- ===== 11. 5 STEPS ===== -->
   <section class="steps">
-    <img class="deco deco--photo deco--st-1" src="assets/img/deco/photos/buttons-a.jpg" alt="" aria-hidden="true" loading="lazy">
-    <img class="deco deco--photo deco--st-2" src="assets/img/deco/photos/zipper-b.jpg" alt="" aria-hidden="true" loading="lazy">
+    <img class="deco deco--st-1" src="assets/img/deco/needle.svg" alt="" aria-hidden="true" loading="lazy">
     <div class="container">
       <div class="section-head section-head--center">
         <span class="eyebrow">Производство под вас</span>
@@ -623,8 +624,7 @@
 
   <!-- ===== 12. METRICS / STANDARD ===== -->
   <section class="metrics">
-    <img class="deco deco--photo deco--mt-1" src="assets/img/deco/photos/scissors-b.jpg" alt="" aria-hidden="true" loading="lazy">
-    <img class="deco deco--photo deco--mt-2" src="assets/img/deco/photos/buttons-d.jpg" alt="" aria-hidden="true" loading="lazy">
+    <img class="deco deco--mt-1" src="assets/img/deco/tape.svg" alt="" aria-hidden="true" loading="lazy">
     <div class="container">
       <div class="metrics__head">
         <h2 class="section-title section-title--inverse">Тесьма, резинка и термоэтикетка — <span class="accent-yellow">3 надёжных компонента</span> в вашем изделии</h2>
@@ -708,23 +708,29 @@
         </div>
 
         <div class="final-cta__form-wrap">
-          <form class="cta-form" id="form-cta" aria-label="Финальная форма заявки">
+          <form class="cta-form" id="form-cta" action="https://formsubmit.co/Mizievazarina9@gmail.com" method="POST" aria-label="Финальная форма заявки">
+            <input type="hidden" name="_cc" value="brycun@mail.ru">
+            <input type="hidden" name="_subject" value="Заявка с сайта Швеймаркет — Финальная форма">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://sheymarket.ru/?sent=1">
+            <input type="text" name="_honey" style="display:none">
             <h3>Получить расчёт за 15 минут</h3>
             <p class="cta-form__note">Перезвоним, пришлём прайс на фурнитуру или прайс по пошиву.</p>
 
             <label>
               <span>Как к вам обращаться?</span>
-              <input type="text" name="name" placeholder="Ваше имя" required />
+              <input type="text" name="Имя" placeholder="Ваше имя" required />
             </label>
 
             <label>
               <span>Телефон</span>
-              <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required />
+              <input type="tel" name="Телефон" placeholder="+7 (___) ___-__-__" required />
             </label>
 
             <label>
               <span>Что интересует?</span>
-              <select name="topic">
+              <select name="Тема">
                 <option>Пошив одежды</option>
                 <option>Фурнитура оптом</option>
                 <option>Тесьма / резинка / термоэтикетка</option>
