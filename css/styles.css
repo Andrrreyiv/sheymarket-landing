@@ -67,7 +67,7 @@ ul, ol { list-style: none; }
 }
 
 @media (max-width: 1100px) { :root { --sp-section: 96px; } }
-@media (max-width: 600px)  { :root { --sp-section: 72px; } }
+@media (max-width: 600px)  { :root { --sp-section: 56px; } }
 
 /* ---------- Layout ---------- */
 .container {
@@ -883,7 +883,8 @@ section { padding: var(--sp-section) 0; }
 /* ===========================================================
    4. TESTIMONIAL
    =========================================================== */
-.testimonial { background: var(--c-bg); }
+.testimonial { background: var(--c-bg); padding: 64px 0; }
+@media (max-width: 600px) { .testimonial { padding: 48px 0; } }
 .testimonial__head {
   display: flex;
   justify-content: center;
@@ -1817,7 +1818,8 @@ body.no-scroll { overflow: hidden; }
 .problems,
 .assort,
 .steps,
-.metrics { position: relative; overflow: hidden; }
+.metrics,
+.fittings { position: relative; overflow: hidden; }
 .fur-intro__card { position: relative; overflow: hidden; }
 
 .deco {
@@ -1857,60 +1859,73 @@ body.no-scroll { overflow: hidden; }
   .deco--mt-1 { width: 170px; }
 }
 
-/* Mobile — shrink, keep all 6 visible but small */
+/* Mobile — hide decos completely (они декоративны, на мобильном ломают layout) */
 @media (max-width: 640px) {
-  .deco { filter: drop-shadow(0 6px 14px rgba(11,16,56,.24)); }
-  .deco--fi-1 { width: 110px; top: 14px; left: -44px; }
-  .deco--pr-1 { width: 120px; top: 22px; right: -48px; }
-  .deco--as-1 { width: 115px; top: 30px; left: -44px; }
-  .deco--as-2 { width: 105px; bottom: 28px; right: -36px; }
-  .deco--st-1 { width: 130px; top: 16px; right: -50px; }
-  .deco--mt-1 { width: 115px; top: 24px; left: -44px; }
+  .deco { display: none !important; }
 }
 
-/* ===== WB Photo Collage (About section) ===== */
-.wb-collage {
+/* ===== Flat-Lay Clothes Collage (About section) ===== */
+.flatlay-collage {
   position: relative;
   border-radius: var(--r-xl);
   overflow: hidden;
   max-width: 440px;
   margin: 0 auto;
-  border: 5px solid var(--c-accent);
   box-shadow: var(--sh-lg);
+  border: 4px solid var(--c-accent);
 }
-.wb-collage__grid {
+.flatlay-collage__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 3fr 2fr 2fr;
+  grid-template-rows: 180px 100px 180px;
   gap: 3px;
-  background: var(--c-accent);
-  aspect-ratio: 3/4;
+  background: var(--c-text);
 }
-.wbc {
+.flc {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform .35s ease;
+  transition: transform .4s ease;
 }
-.wbc--1 { grid-column: 1/3; grid-row: 1/3; }
-.wb-collage:hover .wbc { transform: scale(1.04); }
-.wb-collage__badge {
+.flc--1 { grid-column: 1; grid-row: 1/3; }
+.flc--2 { grid-column: 2; grid-row: 1; }
+.flc--3 { grid-column: 3; grid-row: 1; }
+.flc--4 { grid-column: 2/4; grid-row: 2; }
+.flc--5 { grid-column: 1; grid-row: 3; }
+.flc--6 { grid-column: 2; grid-row: 3; }
+.flc--7 { grid-column: 3; grid-row: 3; }
+/* hide unused */
+.flc--8, .flc--9 { display: none; }
+.flatlay-collage:hover .flc { transform: scale(1.04); }
+.flatlay-collage__label {
   position: absolute;
   bottom: 14px;
   left: 14px;
   display: flex;
   align-items: center;
-  gap: 8px;
-  background: rgba(255,255,255,.92);
+  gap: 7px;
+  background: rgba(255,255,255,.93);
   backdrop-filter: blur(6px);
   border-radius: 10px;
-  padding: 6px 12px 6px 8px;
+  padding: 5px 12px 5px 8px;
   font-size: 13px;
   font-weight: 700;
   color: var(--c-text);
   box-shadow: 0 2px 12px rgba(0,0,0,.15);
 }
 @media (max-width: 640px) {
-  .wb-collage { max-width: 100%; }
+  .flatlay-collage { max-width: 100%; }
+  .flatlay-collage__grid { grid-template-rows: 140px 80px 140px; }
+}
+
+/* ===== Deco photo items — real product photos as floating cards ===== */
+/* Universal treatment: white card + shadow works on any section bg */
+.deco {
+  background: rgba(255,255,255,.96);
+  padding: 12px;
+  border-radius: 20px;
+  box-shadow: 0 16px 40px rgba(0,0,0,.28), 0 4px 12px rgba(0,0,0,.16);
+  filter: none;
+  object-fit: contain;
 }
