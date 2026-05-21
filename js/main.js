@@ -50,15 +50,39 @@
     });
   });
 
-  // ----- Form submit: show loading state, then let the form submit normally -----
+  // ----- Form submit: AJAX to Google Apps Script (user stays on page) -----
   document.querySelectorAll('form[action*="script.google.com"]').forEach((form) => {
-    form.addEventListener('submit', () => {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+
       const btn = form.querySelector('button[type="submit"]');
       if (btn) {
         btn.textContent = 'Отправляем…';
         btn.disabled = true;
         btn.style.opacity = '0.75';
       }
+
+      fetch(form.action, {
+        method: 'POST',
+        mode: 'no-cors',
+        body: new URLSearchParams(new FormData(form))
+      })
+        .then(() => {
+          form.innerHTML =
+            '<div class="form-success">' +
+              '<svg viewBox="0 0 24 24" width="52" height="52" aria-hidden="true"><path fill="currentColor" d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>' +
+              '<p class="form-success__title">Заявка принята!</p>' +
+              '<p class="form-success__sub">Перезвоним в течение 15 минут<br>в рабочее время (Пн–Сб, 9:00–19:00).</p>' +
+            '</div>';
+        })
+        .catch(() => {
+          if (btn) {
+            btn.textContent = 'Отправить заявку';
+            btn.disabled = false;
+            btn.style.opacity = '';
+          }
+          alert('Не удалось отправить заявку. Позвоните нам напрямую: +7 (928) 078-84-66');
+        });
     });
   });
 
