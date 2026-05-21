@@ -50,26 +50,14 @@
     });
   });
 
-  // ----- Form submit stub -----
-  document.querySelectorAll('form').forEach((form) => {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
+  // ----- Form submit: show loading state, then let the form submit normally -----
+  document.querySelectorAll('form[action*="formsubmit.co"]').forEach((form) => {
+    form.addEventListener('submit', () => {
       const btn = form.querySelector('button[type="submit"]');
       if (btn) {
-        const original = btn.textContent;
-        btn.textContent = 'Заявка отправлена ✓';
+        btn.textContent = 'Отправляем…';
         btn.disabled = true;
-        btn.style.background = '#43C68F';
-        btn.style.color = '#fff';
-        btn.style.borderColor = '#1f8d62';
-        setTimeout(() => {
-          btn.textContent = original;
-          btn.disabled = false;
-          btn.style.background = '';
-          btn.style.color = '';
-          btn.style.borderColor = '';
-          form.reset();
-        }, 2800);
+        btn.style.opacity = '0.75';
       }
     });
   });
