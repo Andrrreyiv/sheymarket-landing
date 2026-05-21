@@ -51,7 +51,7 @@
   });
 
   // ----- Form submit: show loading state, then let the form submit normally -----
-  document.querySelectorAll('form[action*="formsubmit.co"]').forEach((form) => {
+  document.querySelectorAll('form[action*="script.google.com"]').forEach((form) => {
     form.addEventListener('submit', () => {
       const btn = form.querySelector('button[type="submit"]');
       if (btn) {
