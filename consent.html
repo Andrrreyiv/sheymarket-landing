@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, follow" />
+  <title>Согласие на обработку персональных данных — Швеймаркет</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='7'%20fill='%234D61C4'/%3E%3Cpath%20d='M9%2023l14-14m-2%200h2v2'%20stroke='%23FFD556'%20stroke-width='2.4'%20stroke-linecap='round'%20fill='none'/%3E%3Ccircle%20cx='9'%20cy='23'%20r='1.6'%20fill='%23FFD556'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    * { margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      font-size: 17px;
+      line-height: 1.72;
+      color: #14182A;
+      background: #fff;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: #4D61C4; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul, ol { list-style: none; }
+
+    /* ---- Header ---- */
+    .doc-header {
+      background: #14182A;
+      padding: 16px 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .doc-header__logo {
+      color: #FFD556;
+      font-weight: 900;
+      font-size: 20px;
+      letter-spacing: .04em;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .doc-header__logo span { color: rgba(255,255,255,.85); font-weight: 600; font-size: 13px; letter-spacing: .02em; }
+    .doc-header__back {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      color: rgba(255,255,255,.72);
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 8px 16px;
+      border: 1px solid rgba(255,255,255,.18);
+      border-radius: 999px;
+      transition: color .15s, border-color .15s, background .15s;
+    }
+    .doc-header__back:hover { color: #FFD556; border-color: #FFD556; background: rgba(255,213,86,.08); text-decoration: none; }
+    .doc-header__back svg { flex: 0 0 auto; }
+
+    /* ---- Content ---- */
+    .doc-wrap {
+      max-width: 840px;
+      margin: 0 auto;
+      padding: 60px 28px 96px;
+    }
+    .doc-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 16px;
+      background: #E8ECFB;
+      color: #4D61C4;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      border-radius: 999px;
+      margin-bottom: 18px;
+    }
+    .doc-title {
+      font-size: clamp(27px, 4.5vw, 42px);
+      font-weight: 900;
+      color: #14182A;
+      line-height: 1.1;
+      letter-spacing: -.025em;
+      margin-bottom: 14px;
+    }
+    .doc-meta {
+      color: #5E6478;
+      font-size: 14px;
+      margin-bottom: 32px;
+      padding-bottom: 28px;
+      border-bottom: 2px solid #E5E8F2;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      align-items: center;
+    }
+    .doc-meta__badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #FFF1B8;
+      border: 1.5px solid #FFD556;
+      border-radius: 999px;
+      padding: 4px 12px;
+      font-size: 12.5px;
+      font-weight: 700;
+      color: #14182A;
+    }
+
+    /* ---- Alert ---- */
+    .doc-alert {
+      background: #FFF1B8;
+      border: 2px solid #FFD556;
+      border-radius: 14px;
+      padding: 20px 24px;
+      margin-bottom: 40px;
+      font-size: 15.5px;
+      font-weight: 600;
+      color: #14182A;
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+    .doc-alert__icon {
+      flex: 0 0 auto;
+      width: 28px;
+      height: 28px;
+      background: #FFD556;
+      border-radius: 50%;
+      border: 2px solid #14182A;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      margin-top: 1px;
+    }
+
+    .doc-section { margin-bottom: 38px; }
+    .doc-section h2 {
+      font-size: 20px;
+      font-weight: 800;
+      color: #14182A;
+      margin-bottom: 14px;
+      padding-left: 16px;
+      border-left: 4px solid #FFD556;
+      line-height: 1.28;
+    }
+    .doc-section p { color: #14182A; margin-bottom: 12px; opacity: .9; }
+    .doc-section ul, .doc-section ol {
+      padding-left: 20px;
+      margin-bottom: 12px;
+    }
+    .doc-section ul { list-style: disc; }
+    .doc-section ol { list-style: decimal; }
+    .doc-section li { margin-bottom: 7px; opacity: .9; }
+    .doc-section strong { font-weight: 700; opacity: 1; }
+    .doc-section a { color: #4D61C4; }
+
+    .doc-note {
+      background: #F4F6FB;
+      border: 1.5px solid #E5E8F2;
+      border-left: 4px solid #4D61C4;
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin: 18px 0;
+      font-size: 15.5px;
+      color: #14182A;
+    }
+    .doc-warn {
+      background: #FFF1B8;
+      border: 1.5px solid #FFD556;
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin: 18px 0;
+      font-size: 15.5px;
+      color: #14182A;
+    }
+
+    /* Confirmation card */
+    .doc-confirm {
+      background: linear-gradient(135deg, #394891 0%, #4D61C4 100%);
+      border-radius: 20px;
+      padding: 32px 36px;
+      margin-top: 10px;
+      margin-bottom: 38px;
+    }
+    .doc-confirm h3 { font-size: 18px; font-weight: 800; color: #FFD556; margin-bottom: 16px; }
+    .doc-confirm ul { list-style: none; padding: 0; }
+    .doc-confirm li {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      color: rgba(255,255,255,.9);
+      font-size: 15.5px;
+      margin-bottom: 10px;
+      opacity: 1;
+    }
+    .doc-confirm li::before {
+      content: "✓";
+      flex: 0 0 auto;
+      width: 22px;
+      height: 22px;
+      background: #FFD556;
+      color: #14182A;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 900;
+      margin-top: 1px;
+    }
+    .doc-confirm a { color: #FFD556; }
+
+    /* Contact box */
+    .doc-contact {
+      background: #F4F6FB;
+      border: 1.5px solid #E5E8F2;
+      border-radius: 20px;
+      padding: 28px 32px;
+      margin-top: 14px;
+    }
+    .doc-contact h3 { font-size: 17px; font-weight: 800; margin-bottom: 14px; color: #14182A; }
+    .doc-contact p { font-size: 15px; line-height: 1.6; color: #14182A; margin-bottom: 8px; opacity: .85; }
+    .doc-contact a { color: #4D61C4; }
+    .doc-contact a:hover { text-decoration: underline; }
+
+    /* Footer */
+    .doc-footer {
+      background: #14182A;
+      color: rgba(255,255,255,.45);
+      text-align: center;
+      padding: 22px 28px;
+      font-size: 13.5px;
+      line-height: 1.7;
+    }
+    .doc-footer a { color: rgba(255,255,255,.6); text-decoration: underline; }
+    .doc-footer a:hover { color: #FFD556; }
+    .doc-footer__sep { margin: 0 10px; opacity: .4; }
+
+    @media (max-width: 600px) {
+      .doc-wrap { padding: 36px 18px 64px; }
+      .doc-header { padding: 14px 18px; }
+      .doc-header__logo span { display: none; }
+      .doc-confirm, .doc-contact { padding: 22px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="doc-header">
+    <a href="index.html" class="doc-header__logo">
+      ШВЕЙМАРКЕТ
+      <span>/ Согласие на обработку данных</span>
+    </a>
+    <a href="index.html" class="doc-header__back">
+      <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20z"/></svg>
+      На главную
+    </a>
+  </header>
+
+  <main class="doc-wrap">
+
+    <span class="doc-eyebrow">Правовой документ</span>
+    <h1 class="doc-title">Согласие на обработку персональных данных</h1>
+    <div class="doc-meta">
+      <span>Редакция от 21 мая 2026 г.</span>
+      <span class="doc-meta__badge">
+        <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2zm0 18a8 8 0 110-16 8 8 0 010 16zm-1-5h2v2h-2zm0-8h2v6h-2z"/></svg>
+        Ст. 9 Федерального закона № 152-ФЗ
+      </span>
+    </div>
+
+    <div class="doc-alert">
+      <span class="doc-alert__icon">!</span>
+      <div>Настоящее Согласие вступает в силу в момент нажатия кнопки <strong>«Отправить заявку»</strong> на сайте sheymarket.ru. Если вы не согласны с изложенными условиями, пожалуйста, не отправляйте форму.</div>
+    </div>
+
+    <!-- 1 -->
+    <div class="doc-section">
+      <h2>1. Кто даёт согласие</h2>
+      <p>Я, физическое лицо, заполнившее форму обратной связи на сайте <strong>sheymarket.ru</strong> (далее — «Субъект персональных данных»), в соответствии с Федеральным законом от 27.07.2006 № 152-ФЗ «О персональных данных» добровольно, своей волей и в своём интересе выражаю полное и безоговорочное согласие на обработку моих персональных данных на условиях, изложенных ниже.</p>
+    </div>
+
+    <!-- 2 -->
+    <div class="doc-section">
+      <h2>2. Оператор персональных данных</h2>
+      <p><strong>Швеймаркет</strong></p>
+      <p>Адрес: 360028, Кабардино-Балкарская Республика, г. Нальчик, ул. Безенгийская, д. 10</p>
+      <p>Электронная почта: <a href="mailto:Mizievazarina9@gmail.com">Mizievazarina9@gmail.com</a></p>
+      <p>Телефон: <a href="tel:+79280788466">+7 (928) 078-84-66</a></p>
+    </div>
+
+    <!-- 3 -->
+    <div class="doc-section">
+      <h2>3. Перечень персональных данных</h2>
+      <p>Я даю согласие на обработку следующих персональных данных, указываемых мной при заполнении формы:</p>
+      <ul>
+        <li>имя (фамилия и/или имя, либо псевдоним — по усмотрению субъекта);</li>
+        <li>номер мобильного телефона;</li>
+        <li>тема обращения (при указании в поле выбора).</li>
+      </ul>
+    </div>
+
+    <!-- 4 -->
+    <div class="doc-section">
+      <h2>4. Цели обработки</h2>
+      <p>Персональные данные обрабатываются исключительно в следующих целях:</p>
+      <ul>
+        <li>рассмотрение заявки и направление ответа — обратный звонок или сообщение в мессенджере;</li>
+        <li>предоставление коммерческих предложений: прайс-листов на пошив одежды, фурнитуру, образцы;</li>
+        <li>информирование об условиях сотрудничества, акциях и новинках ассортимента.</li>
+      </ul>
+    </div>
+
+    <!-- 5 -->
+    <div class="doc-section">
+      <h2>5. Правовое основание</h2>
+      <p>Обработка персональных данных осуществляется на основании <strong>части 1 статьи 9 Федерального закона от 27.07.2006 № 152-ФЗ «О персональных данных»</strong> — согласие субъекта персональных данных.</p>
+    </div>
+
+    <!-- 6 -->
+    <div class="doc-section">
+      <h2>6. Способы обработки</h2>
+      <p>Обработка персональных данных осуществляется следующими способами:</p>
+      <ul>
+        <li><strong>Автоматизированная обработка</strong> — получение данных через веб-форму и их передача на электронную почту Оператора посредством сервиса FormSubmit.co;</li>
+        <li><strong>Неавтоматизированная обработка</strong> — хранение и работа с данными сотрудниками Оператора в рамках исполнения служебных обязанностей.</li>
+      </ul>
+      <div class="doc-note">
+        Сервис <strong>FormSubmit.co</strong> используется для транзитной доставки заявки на электронную почту Оператора. Персональные данные не хранятся на серверах данного сервиса по истечении периода доставки.
+      </div>
+    </div>
+
+    <!-- 7 -->
+    <div class="doc-section">
+      <h2>7. Срок действия согласия</h2>
+      <p>Настоящее Согласие действует в течение <strong>3 (трёх) лет</strong> с момента его предоставления.</p>
+      <p>По истечении указанного срока Согласие считается пролонгированным на аналогичный период, если Субъект персональных данных не направил Оператору заявление об отзыве.</p>
+    </div>
+
+    <!-- 8 -->
+    <div class="doc-section">
+      <h2>8. Отзыв согласия</h2>
+      <p>Я вправе отозвать настоящее Согласие в любой момент, направив Оператору письменное заявление:</p>
+      <ul>
+        <li>по электронной почте: <a href="mailto:Mizievazarina9@gmail.com">Mizievazarina9@gmail.com</a></li>
+        <li>по почтовому адресу: 360028, КБР, г. Нальчик, ул. Безенгийская, д. 10</li>
+      </ul>
+      <p>После получения заявления об отзыве Оператор прекращает обработку персональных данных и обеспечивает их уничтожение или обезличивание в течение <strong>30 (тридцати) дней</strong>.</p>
+      <div class="doc-warn">
+        <strong>Обратите внимание:</strong> отзыв согласия не влечёт незаконности обработки персональных данных, осуществлявшейся на его основании до момента отзыва.
+      </div>
+    </div>
+
+    <!-- Confirmation -->
+    <div class="doc-confirm">
+      <h3>Подтверждение согласия</h3>
+      <ul>
+        <li>Я ознакомлен(а) с настоящим Согласием и <a href="privacy.html">Политикой конфиденциальности</a> Оператора.</li>
+        <li>Я понимаю цели и способы обработки своих персональных данных.</li>
+        <li>Данное согласие предоставляется свободно, конкретно, информированно и сознательно.</li>
+        <li>Я достиг(ла) 18-летнего возраста и обладаю полной дееспособностью.</li>
+      </ul>
+    </div>
+
+    <!-- Contacts -->
+    <div class="doc-contact">
+      <h3>Вопросы и обращения</h3>
+      <p>Для реализации своих прав как субъекта персональных данных обратитесь к Оператору:</p>
+      <p>📧 <a href="mailto:Mizievazarina9@gmail.com">Mizievazarina9@gmail.com</a></p>
+      <p>📞 <a href="tel:+79280788466">+7 (928) 078-84-66</a></p>
+      <p>📍 360028, КБР, г. Нальчик, ул. Безенгийская, д. 10</p>
+      <p>🕘 Пн–Сб, 9:00–19:00. Срок ответа — не более 30 рабочих дней.</p>
+    </div>
+
+  </main>
+
+  <footer class="doc-footer">
+    <p>
+      © 2026 Швеймаркет
+      <span class="doc-footer__sep">·</span>
+      <a href="index.html">Главная страница</a>
+      <span class="doc-footer__sep">·</span>
+      <a href="privacy.html">Политика конфиденциальности</a>
+    </p>
+  </footer>
+
+</body>
+</html>

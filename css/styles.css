@@ -1378,6 +1378,7 @@ section { padding: var(--sp-section) 0; }
   padding: 6px 12px;
   border-radius: var(--r-pill);
   border: 1.5px solid var(--c-text);
+  z-index: 2;
 }
 .prod-card__art {
   width: 100%;
